@@ -1,0 +1,15 @@
+@import "nativescript-theme-core/css/core.light.css";
+
+.image {
+    margin: 5px;
+}
+.label {
+    margin-left: 20px;
+    font-size: 15px;
+}
+.label.mini {
+    font-size: 11px;
+}
+.label.price {
+    font-size: 21px;
+}
