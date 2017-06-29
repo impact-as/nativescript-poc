@@ -20,7 +20,7 @@ import { isAndroid } from "platform";
         <Label text="Close basket" color="lightgray" padding="10" style="horizontal-align: center" (tap)="onCloseDrawerTap()"></Label>
     </StackLayout>
     <FlexboxLayout flexDirection="column" tkMainContent>
-        <Button text="OPEN basket" (tap)="openDrawer()" class="drawerContentButton"></Button>
+        <Image src="~/images/cart.png" width="20" height="20" (tap)="openDrawer()"></Image>
         <StackLayout flexGrow="1" flexShrink="1" height="300">
             <router-outlet></router-outlet>
         </StackLayout>

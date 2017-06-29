@@ -10,6 +10,7 @@
     "nativescript-angular": true,
     "nativescript-intl": true,
     "reflect-metadata": true,
+    "nativescript-svg": true,
     "nativescript-telerik-ui": true,
     "nativescript-theme-core": true,
     "rxjs": true,

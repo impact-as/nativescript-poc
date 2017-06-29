@@ -7,7 +7,7 @@ import { NativeScriptUISideDrawerModule } from "./sidedrawer/angular";
 
 import { DrawerComponent } from './drawer.component';
 
-import { HomeComponent, LoginComponent } from './pages';
+import { HomeComponent, LoginComponent, BasketComponent, CategoryComponent, SearchComponent, FindComponent } from './pages';
 
 import { TabNavigationComponent } from './tab-navigation.component';
 
@@ -26,14 +26,21 @@ import { TabNavigationComponent } from './tab-navigation.component';
     declarations: [
         AppComponent,
         HomeComponent, 
-        LoginComponent,
+        LoginComponent, 
+        BasketComponent, 
+        CategoryComponent, 
+        SearchComponent,
         TabNavigationComponent,
-        DrawerComponent
+        DrawerComponent,
+        FindComponent
     ],
     entryComponents:[
-        HomeComponent,
-        LoginComponent,
-        DrawerComponent
+       HomeComponent, 
+        LoginComponent, 
+        BasketComponent, 
+        CategoryComponent, 
+        SearchComponent,
+        FindComponent
     ],
     providers: [
     ],

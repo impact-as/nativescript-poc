@@ -2,13 +2,14 @@ import { NgModule } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { Routes } from "@angular/router";
 
-import { HomeComponent, LoginComponent} from './pages';
-import { DrawerComponent } from './drawer.component';
+import { HomeComponent, LoginComponent, SearchComponent, CategoryComponent, FindComponent } from './pages';
 
 const routes: Routes = [
     { path: "", component: HomeComponent },
     { path: "login", component: LoginComponent },
-    { path: "drawer", component: DrawerComponent }
+    { path: "search", component: SearchComponent },
+    { path: "category", component: CategoryComponent },
+    { path: "find", component: FindComponent }
 ];
 
 @NgModule({

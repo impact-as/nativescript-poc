@@ -5,17 +5,19 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
-		858B842D18CA22B800AB12DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 858B833A18CA111C00AB12DE /* InfoPlist.strings */; };
-		CD45EE7C18DC2D5800FB50C0 /* app in Resources */ = {isa = PBXBuildFile; fileRef = CD45EE7A18DC2D5800FB50C0 /* app */; };
-		CD62955D1BB2678900AE3A93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD62955C1BB2678900AE3A93 /* main.m */; };
-		91035B63B4F84551BA2B6B68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 740A6E517D994FCC828F343C /* Assets.xcassets */; };
 		211157C5AF914EEA90402F06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 120C69DE2DBF4D6A81D7B774 /* LaunchScreen.storyboard */; };
-		AC82FDBCDB8B47F98561C455 /* build.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A5E0E09DEAF14D85A2CC05D5 /* build.xcconfig */; };
-		590BE7D885D24739A30DFBB1 /* TNSWidgets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 587071B66A2546609739084F /* TNSWidgets.framework */; };
 		40BE924D28EB4519865657EC /* TNSWidgets.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 587071B66A2546609739084F /* TNSWidgets.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		509B5749BB1041B493A2FC49 /* TelerikUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CC23300A6434B54BC9C75D1 /* TelerikUI.framework */; };
+		590BE7D885D24739A30DFBB1 /* TNSWidgets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 587071B66A2546609739084F /* TNSWidgets.framework */; };
+		833063DC3A6065D45B0C4F4E /* Pods_impactbynativescript.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FBF2E99A7D4513DEC4CE5CE /* Pods_impactbynativescript.framework */; };
+		858B842D18CA22B800AB12DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 858B833A18CA111C00AB12DE /* InfoPlist.strings */; };
+		91035B63B4F84551BA2B6B68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 740A6E517D994FCC828F343C /* Assets.xcassets */; };
+		AC82FDBCDB8B47F98561C455 /* build.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A5E0E09DEAF14D85A2CC05D5 /* build.xcconfig */; };
 		C7B8440E98054AB288D874B7 /* TelerikUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CC23300A6434B54BC9C75D1 /* TelerikUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CD45EE7C18DC2D5800FB50C0 /* app in Resources */ = {isa = PBXBuildFile; fileRef = CD45EE7A18DC2D5800FB50C0 /* app */; };
+		CD62955D1BB2678900AE3A93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD62955C1BB2678900AE3A93 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,21 +36,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		120C69DE2DBF4D6A81D7B774 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = unknown; name = LaunchScreen.storyboard; path = impactbynativescript/Resources/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1CC23300A6434B54BC9C75D1 /* TelerikUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TelerikUI.framework; path = "$(SRCROOT)/../../node_modules/nativescript-telerik-ui/platforms/ios/TelerikUI.framework"; sourceTree = "<group>"; };
+		4FBF2E99A7D4513DEC4CE5CE /* Pods_impactbynativescript.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_impactbynativescript.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		587071B66A2546609739084F /* TNSWidgets.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TNSWidgets.framework; path = "$(SRCROOT)/../../node_modules/tns-core-modules-widgets/platforms/ios/TNSWidgets.framework"; sourceTree = "<group>"; };
+		740A6E517D994FCC828F343C /* Assets.xcassets */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = unknown; name = Assets.xcassets; path = impactbynativescript/Resources/Assets.xcassets; sourceTree = "<group>"; };
 		858B832E18CA111C00AB12DE /* impactbynativescript.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = impactbynativescript.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		858B833918CA111C00AB12DE /* impactbynativescript-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "impactbynativescript-Info.plist"; sourceTree = "<group>"; };
 		858B833B18CA111C00AB12DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		858B833F18CA111C00AB12DE /* impactbynativescript-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "impactbynativescript-Prefix.pch"; sourceTree = "<group>"; };
 		858B843318CA22B800AB12DE /* impactbynativescript.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = impactbynativescript.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5E0E09DEAF14D85A2CC05D5 /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = unknown; name = build.xcconfig; path = impactbynativescript/Resources/build.xcconfig; sourceTree = "<group>"; };
 		CD45EE7A18DC2D5800FB50C0 /* app */ = {isa = PBXFileReference; lastKnownFileType = folder; path = app; sourceTree = "<group>"; };
 		CD62955C1BB2678900AE3A93 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = internal/main.m; sourceTree = SOURCE_ROOT; };
 		CDD59A261BB43B5D00EC2671 /* build-debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "build-debug.xcconfig"; sourceTree = "<group>"; };
 		CDD59A271BB43B5D00EC2671 /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "build-release.xcconfig"; sourceTree = "<group>"; };
 		CDF4743E1BA4855C0087EA85 /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = build.xcconfig; sourceTree = "<group>"; };
-		740A6E517D994FCC828F343C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = Assets.xcassets; path = "impactbynativescript/Resources/Assets.xcassets"; sourceTree = "<group>"; fileEncoding = 4; };
-		120C69DE2DBF4D6A81D7B774 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = LaunchScreen.storyboard; path = "impactbynativescript/Resources/LaunchScreen.storyboard"; sourceTree = "<group>"; fileEncoding = 4; };
-		A5E0E09DEAF14D85A2CC05D5 /* build.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = build.xcconfig; path = "impactbynativescript/Resources/build.xcconfig"; sourceTree = "<group>"; fileEncoding = 4; };
-		587071B66A2546609739084F /* TNSWidgets.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TNSWidgets.framework; path = "$(SRCROOT)/../../node_modules/tns-core-modules-widgets/platforms/ios/TNSWidgets.framework"; sourceTree = "<group>"; };
-		1CC23300A6434B54BC9C75D1 /* TelerikUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TelerikUI.framework; path = "$(SRCROOT)/../../node_modules/nativescript-telerik-ui/platforms/ios/TelerikUI.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,12 +61,20 @@
 			files = (
 				590BE7D885D24739A30DFBB1 /* TNSWidgets.framework in Frameworks */,
 				509B5749BB1041B493A2FC49 /* TelerikUI.framework in Frameworks */,
+				833063DC3A6065D45B0C4F4E /* Pods_impactbynativescript.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2DA067C63F535D1105DAC37D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		858B832518CA111C00AB12DE = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +82,7 @@
 				858B833718CA111C00AB12DE /* impactbynativescript */,
 				858B833018CA111C00AB12DE /* Frameworks */,
 				858B832F18CA111C00AB12DE /* Products */,
+				2DA067C63F535D1105DAC37D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +100,7 @@
 			children = (
 				587071B66A2546609739084F /* TNSWidgets.framework */,
 				1CC23300A6434B54BC9C75D1 /* TelerikUI.framework */,
+				4FBF2E99A7D4513DEC4CE5CE /* Pods_impactbynativescript.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -132,6 +145,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 858B843018CA22B800AB12DE /* Build configuration list for PBXNativeTarget "impactbynativescript" */;
 			buildPhases = (
+				9D7A54314053DDDAE78CE8EE /* [CP] Check Pods Manifest.lock */,
 				C97FD7AC1ADE5369004DB2A4 /* NativeScript PreBuild */,
 				858B83F218CA22B800AB12DE /* Sources */,
 				CD62955B1BB2651D00AE3A93 /* NativeScript PreLink */,
@@ -139,6 +153,8 @@
 				858B842C18CA22B800AB12DE /* Resources */,
 				85F5BDFC1A9363BE006B9701 /* Embed Frameworks */,
 				CD3EAD351B05FF060042DBFC /* NativeScript PostBuild */,
+				EB70D068C7D064A4678DC48E /* [CP] Embed Pods Frameworks */,
+				9202F69642328A4868E7AC29 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,6 +208,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		9202F69642328A4868E7AC29 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-impactbynativescript/Pods-impactbynativescript-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D7A54314053DDDAE78CE8EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		C97FD7AC1ADE5369004DB2A4 /* NativeScript PreBuild */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -235,6 +281,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"$SRCROOT/internal/nativescript-pre-link\"";
+			showEnvVarsInLog = 0;
+		};
+		EB70D068C7D064A4678DC48E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-impactbynativescript/Pods-impactbynativescript-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -342,6 +403,11 @@
 				CLANG_ENABLE_MODULES = NO;
 				CLANG_MODULES_AUTOLINK = NO;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../node_modules/tns-core-modules-widgets/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-telerik-ui/platforms/ios\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "impactbynativescript/impactbynativescript-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -353,11 +419,6 @@
 				PRODUCT_NAME = impactbynativescript;
 				VALID_ARCHS = "armv7 arm64";
 				WRAPPER_EXTENSION = app;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../node_modules/tns-core-modules-widgets/platforms/ios\"",
-					"\"$(SRCROOT)/../../node_modules/nativescript-telerik-ui/platforms/ios\"",
-				);
 			};
 			name = Debug;
 		};
@@ -369,6 +430,11 @@
 				CLANG_ENABLE_MODULES = NO;
 				CLANG_MODULES_AUTOLINK = NO;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../node_modules/tns-core-modules-widgets/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-telerik-ui/platforms/ios\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "impactbynativescript/impactbynativescript-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/impactbynativescript/impactbynativescript-Info.plist";
@@ -376,11 +442,6 @@
 				PRODUCT_NAME = impactbynativescript;
 				VALID_ARCHS = "armv7 arm64";
 				WRAPPER_EXTENSION = app;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../node_modules/tns-core-modules-widgets/platforms/ios\"",
-					"\"$(SRCROOT)/../../node_modules/nativescript-telerik-ui/platforms/ios\"",
-				);
 			};
 			name = Release;
 		};

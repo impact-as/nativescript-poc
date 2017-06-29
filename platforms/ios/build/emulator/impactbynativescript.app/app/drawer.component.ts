@@ -8,7 +8,7 @@ import { RadSideDrawer } from './sidedrawer';
 @Component({
     selector: "tk-sidedrawer-getting-started",
     template: `
-<RadSideDrawer tkExampleTitle tkToggleNavButton>
+<RadSideDrawer tkExampleTitle tkToggleNavButton height="100%">
     <StackLayout tkDrawerContent class="sideStackLayout">
         <StackLayout class="sideTitleStackLayout">
             <Label text="Navigation Menu"></Label>

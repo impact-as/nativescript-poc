@@ -62,7 +62,19 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		AvLUsTKNYBPZbSstG96WbupP5qg=
+		gXVOlzK1h+a2nrc6sRXkjH5mYWs=
+		</data>
+		<key>Frameworks/CocoaLumberjack.framework/CocoaLumberjack</key>
+		<data>
+		2uv3oXc21i5bSZP1LhxyE5xpln4=
+		</data>
+		<key>Frameworks/CocoaLumberjack.framework/Info.plist</key>
+		<data>
+		imb3YTT8n3w43SIpDlVxBawwg+A=
+		</data>
+		<key>Frameworks/CocoaLumberjack.framework/_CodeSignature/CodeResources</key>
+		<data>
+		nXwxs9LGmC3MMFiCkkGrGFR6GRU=
 		</data>
 		<key>Frameworks/NativeScript.framework/Info.plist</key>
 		<data>
@@ -75,6 +87,18 @@
 		<key>Frameworks/NativeScript.framework/_CodeSignature/CodeResources</key>
 		<data>
 		W6pjrpOhVLyiTEYDRx5jAA6l5Pc=
+		</data>
+		<key>Frameworks/SVGKit.framework/Info.plist</key>
+		<data>
+		YIm0HR6sG0iLx13heLUl6eyoTeI=
+		</data>
+		<key>Frameworks/SVGKit.framework/SVGKit</key>
+		<data>
+		0gR+shQHYNDIdSTmn6gKOk/bZEg=
+		</data>
+		<key>Frameworks/SVGKit.framework/_CodeSignature/CodeResources</key>
+		<data>
+		b5oDBas38LPJVM+G/L+1j6HKgns=
 		</data>
 		<key>Frameworks/TNSWidgets.framework/Info.plist</key>
 		<data>
@@ -170,7 +194,7 @@
 		</data>
 		<key>LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		fy+oT8literI+fexYMvlQ2KmNH0=
+		cRg7ZQUkYozG/5aAbArFEfU010c=
 		</data>
 		<key>LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -178,7 +202,7 @@
 		</data>
 		<key>LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		k3dAYD09YGleqSyh+pb1XzEoTfU=
+		NXVIMYwa6qlsmUZ2tT+GpT3+AfI=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -190,39 +214,63 @@
 		</data>
 		<key>app/app.component.js</key>
 		<data>
-		ZkhC712FXJgwp7upi0YZZux2ZW8=
+		1eJmc4oMvyWHL3l2GrsGCc3ke3g=
 		</data>
 		<key>app/app.component.ts</key>
 		<data>
-		oMoOdoTTSfUolP+NR2D+OZSMQbE=
+		jHZCfkgRYr8AWAwyXCqEkVszE6w=
 		</data>
 		<key>app/app.css</key>
 		<data>
-		6sB4Ck3/cR5cfUMRZAa8rYRiO4c=
+		QRuLZADUgXxVLD14Qqg68RbzA+s=
 		</data>
 		<key>app/app.module.js</key>
 		<data>
-		NgcVypA9555+uM0Km6iV6t4RtFU=
+		iEbT6y6emDXG8GPgcwKXrd0kYoA=
 		</data>
 		<key>app/app.module.ts</key>
 		<data>
-		43a/Pn1Hfhx98bxCTgECPOIEDWE=
+		X3y3/TdBKJoFPbvdpCgjaTeI9QM=
 		</data>
 		<key>app/app.routing.js</key>
 		<data>
-		nxx2DMgxSvytGR47dywswIcm6jc=
+		14MoTIVA3sl53EuKwUyAI1kS/zk=
 		</data>
 		<key>app/app.routing.ts</key>
 		<data>
-		dUuc59/Zw6UDTL/gVM2YUjBVxOE=
+		eJgmg10SDgq7X5PCG9JgtbWYf6U=
 		</data>
 		<key>app/drawer.component.js</key>
 		<data>
-		RmArea7921fqBQN7gmEdw8WKgEg=
+		ko5iWOpJwSe3Xbk6toSqfHiELw0=
 		</data>
 		<key>app/drawer.component.ts</key>
 		<data>
-		z6sHyFxlaL31NMtkyXhBg5xT5Ro=
+		VFabqbwTlDNB1ElW3hFHBw/G8hA=
+		</data>
+		<key>app/images/cart.svg</key>
+		<data>
+		TrGYTZQcQFiRqNrR/jAjBEJTOkQ=
+		</data>
+		<key>app/images/category.svg</key>
+		<data>
+		cfdwKftO5xk6SXNf5IJ78K7Rh4M=
+		</data>
+		<key>app/images/find.svg</key>
+		<data>
+		vUD+MhUdnHCcjgnhOgfX0bm5ZX4=
+		</data>
+		<key>app/images/home.svg</key>
+		<data>
+		eecKzTCcetx4/OdaI0hpZf4bhFg=
+		</data>
+		<key>app/images/login.svg</key>
+		<data>
+		yFCAX378pclzM/K1uNTfSLIrdRM=
+		</data>
+		<key>app/images/search.svg</key>
+		<data>
+		1QmsA6NvDq0oou2ct9q5Rg5kyiY=
 		</data>
 		<key>app/main.aot.ts</key>
 		<data>
@@ -240,6 +288,30 @@
 		<data>
 		ei+Gc12nE/uNFJG8YLSZuQ9VkFI=
 		</data>
+		<key>app/pages/basket.component.js</key>
+		<data>
+		bG/s2LBdOesiCxB54yfOG+6j4UE=
+		</data>
+		<key>app/pages/basket.component.ts</key>
+		<data>
+		8OGvqDnnz3nTvP2TxqNYUOF1Wo0=
+		</data>
+		<key>app/pages/category.component.js</key>
+		<data>
+		GJ9DqiNIkBuxyFxuToVW5+OGdKU=
+		</data>
+		<key>app/pages/category.component.ts</key>
+		<data>
+		eO7lpPeo0B3ys0Tl77SjckSAbrY=
+		</data>
+		<key>app/pages/find.component.js</key>
+		<data>
+		N47SEPnPa89hhaDahgMo/jlXSrE=
+		</data>
+		<key>app/pages/find.component.ts</key>
+		<data>
+		CwdFa11wP14fePyXwIMAsDY4Yng=
+		</data>
 		<key>app/pages/home.component.js</key>
 		<data>
 		smgzMUfHjsC+TPOnjj2pMZPj5uw=
@@ -250,11 +322,11 @@
 		</data>
 		<key>app/pages/index.js</key>
 		<data>
-		YUwA4NhOajJbGyvJ8yeEbwLqQ2o=
+		zTq8+wC26HGT0eeQva22O0zqNPA=
 		</data>
 		<key>app/pages/index.ts</key>
 		<data>
-		zaCrjHLVpBUKmhvx0DqfXKN7prc=
+		cOOEefvcDtX2bXOjQRmijzURDrc=
 		</data>
 		<key>app/pages/login.component.js</key>
 		<data>
@@ -263,6 +335,22 @@
 		<key>app/pages/login.component.ts</key>
 		<data>
 		FP2NQKFz/rjl6MS0MJIKodx5l4M=
+		</data>
+		<key>app/pages/products/product.model.js</key>
+		<data>
+		+Hm+YfHC3uMhNAKskgAB9yCn02k=
+		</data>
+		<key>app/pages/products/product.model.ts</key>
+		<data>
+		dMaqLzSLgO4FA2K/rJ/HohB1dvw=
+		</data>
+		<key>app/pages/search.component.js</key>
+		<data>
+		mJ7rvvFMz3JO6LBECJH+Sump5nU=
+		</data>
+		<key>app/pages/search.component.ts</key>
+		<data>
+		avWW37xIh/pUnfzUQR9uXQ0+Dt4=
 		</data>
 		<key>app/sidedrawer/angular/index.d.ts</key>
 		<data>
@@ -318,11 +406,11 @@
 		</data>
 		<key>app/tab-navigation.component.js</key>
 		<data>
-		uZlrn4YEwF5e8UbQd56HoOGgk3A=
+		2zRjcAMkIthOaIPjKEQ4gFxV0jU=
 		</data>
 		<key>app/tab-navigation.component.ts</key>
 		<data>
-		xNjsvgbZPDVBTZ+dl+l4W7qaV1c=
+		i+M82xKcMOxW0breNjdHwxibA4E=
 		</data>
 		<key>app/tns_modules/@angular/animations/@angular/animations.es5.js</key>
 		<data>
@@ -3903,6 +3991,74 @@
 		<key>app/tns_modules/nativescript-intl/package.json</key>
 		<data>
 		bMBre35qfreeBvHma5eljG5OjqU=
+		</data>
+		<key>app/tns_modules/nativescript-svg/angular/index.d.ts</key>
+		<data>
+		uKSsg891J3+4vdrqhr2LYl6ASmk=
+		</data>
+		<key>app/tns_modules/nativescript-svg/angular/index.js</key>
+		<data>
+		1dZLTYZmW1Pwq3Kr+aSZmnnd29I=
+		</data>
+		<key>app/tns_modules/nativescript-svg/angular/index.ts</key>
+		<data>
+		H8pGZP+gmlMHApQco1YBjrsLA4Y=
+		</data>
+		<key>app/tns_modules/nativescript-svg/angular/nativescript-svg-directives.d.ts</key>
+		<data>
+		VvqJl9+CBxSDJO+UExjxvr2E3po=
+		</data>
+		<key>app/tns_modules/nativescript-svg/angular/nativescript-svg-directives.js</key>
+		<data>
+		J3utZBEqgwJBNDA51wCLEO/eEmU=
+		</data>
+		<key>app/tns_modules/nativescript-svg/angular/nativescript-svg-directives.ts</key>
+		<data>
+		LXo2S7B6joCCw3NUszc+TNQqPqA=
+		</data>
+		<key>app/tns_modules/nativescript-svg/angular/nativescript-svg-module.d.ts</key>
+		<data>
+		7ZQujAov6Cy9A7YmJIdOa4JB3Hc=
+		</data>
+		<key>app/tns_modules/nativescript-svg/angular/nativescript-svg-module.js</key>
+		<data>
+		6g5Mf7CTO5cx0dWE5vI9kbCdBag=
+		</data>
+		<key>app/tns_modules/nativescript-svg/angular/nativescript-svg-module.ts</key>
+		<data>
+		tQSgboKuwlipak4fFn43b3xZVdk=
+		</data>
+		<key>app/tns_modules/nativescript-svg/angular/package.json</key>
+		<data>
+		qx2G7RlEBD7258s0yJOzr3a7usI=
+		</data>
+		<key>app/tns_modules/nativescript-svg/hooks/before-livesync/nativescript-angular-sync.js</key>
+		<data>
+		GrgIyuF5e4r+bh/HeLZLiTKRkv8=
+		</data>
+		<key>app/tns_modules/nativescript-svg/package.json</key>
+		<data>
+		MqbTumCMw2O3TgNRAkGA3Sj/gus=
+		</data>
+		<key>app/tns_modules/nativescript-svg/references.d.ts</key>
+		<data>
+		kPUxea5gnDo3RcZpauUBwcvyeZc=
+		</data>
+		<key>app/tns_modules/nativescript-svg/svg.common.ts</key>
+		<data>
+		GK9Fc6zfMEYXAt399PrW/JkBfuc=
+		</data>
+		<key>app/tns_modules/nativescript-svg/svg.d.ts</key>
+		<data>
+		xV2jwbh8uU7oK58rWUD4+u/36DE=
+		</data>
+		<key>app/tns_modules/nativescript-svg/svg.ts</key>
+		<data>
+		sClIuzTSQnn9z6XAFHG8tt+FVk0=
+		</data>
+		<key>app/tns_modules/nativescript-svg/tsconfig.json</key>
+		<data>
+		iCDl1Sr2+jH6uQxF88S0eOJdaLM=
 		</data>
 		<key>app/tns_modules/nativescript-telerik-ui/LICENSE.md</key>
 		<data>
@@ -11706,11 +11862,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AvLUsTKNYBPZbSstG96WbupP5qg=
+			gXVOlzK1h+a2nrc6sRXkjH5mYWs=
 			</data>
 			<key>hash2</key>
 			<data>
-			eC0tH8bO0OtDooKNteIW7cmKXlpynK+UyX1p2BpKV6o=
+			iqlcKXT0lgjmI/k4LtT7E3nrudDmnIg/reNibuREufg=
+			</data>
+		</dict>
+		<key>Frameworks/CocoaLumberjack.framework/CocoaLumberjack</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2uv3oXc21i5bSZP1LhxyE5xpln4=
+			</data>
+			<key>hash2</key>
+			<data>
+			k5SFRWbGx4KrBMBN5K1j0iRXHlvJLHzV/7rIO+Yri9E=
+			</data>
+		</dict>
+		<key>Frameworks/CocoaLumberjack.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			imb3YTT8n3w43SIpDlVxBawwg+A=
+			</data>
+			<key>hash2</key>
+			<data>
+			9Oiz/nA0KdhEs4uy8IRbVXbhOse1O0wOFYNRzLzhVjM=
+			</data>
+		</dict>
+		<key>Frameworks/CocoaLumberjack.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nXwxs9LGmC3MMFiCkkGrGFR6GRU=
+			</data>
+			<key>hash2</key>
+			<data>
+			BEkA5fV2/BhG2tC6Q+k9NpI5M2NtU4IEpk9oY1f6GQE=
 			</data>
 		</dict>
 		<key>Frameworks/NativeScript.framework/Info.plist</key>
@@ -11744,6 +11933,39 @@
 			<key>hash2</key>
 			<data>
 			deDcdQ+3zaTV2hrLDcXJzqvrvAIJW+rSH6Rigp5z27I=
+			</data>
+		</dict>
+		<key>Frameworks/SVGKit.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YIm0HR6sG0iLx13heLUl6eyoTeI=
+			</data>
+			<key>hash2</key>
+			<data>
+			zUryOL3DzAIzeKEOs7hJSuzTisCKjEDHBm2Lu65zeGc=
+			</data>
+		</dict>
+		<key>Frameworks/SVGKit.framework/SVGKit</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0gR+shQHYNDIdSTmn6gKOk/bZEg=
+			</data>
+			<key>hash2</key>
+			<data>
+			vPXUzxeCLz/2yLRoaXSobP7HV+2C1RsDi/zLsUOtnpA=
+			</data>
+		</dict>
+		<key>Frameworks/SVGKit.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			b5oDBas38LPJVM+G/L+1j6HKgns=
+			</data>
+			<key>hash2</key>
+			<data>
+			lWhT7vFTGZxQ5iiF7NbUXEFWR9UmE7prbMWZBecYU1M=
 			</data>
 		</dict>
 		<key>Frameworks/TNSWidgets.framework/Info.plist</key>
@@ -11992,11 +12214,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fy+oT8literI+fexYMvlQ2KmNH0=
+			cRg7ZQUkYozG/5aAbArFEfU010c=
 			</data>
 			<key>hash2</key>
 			<data>
-			tU8uRmci8xIs46dcNa/936J9e9b+Kyo4I5g8OBH82hM=
+			Q57ighVcWfNIUnnmy7l5TM5PUWY8zUXiaNSZ5ha54iM=
 			</data>
 		</dict>
 		<key>LaunchScreen.storyboardc/Info.plist</key>
@@ -12014,11 +12236,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			k3dAYD09YGleqSyh+pb1XzEoTfU=
+			NXVIMYwa6qlsmUZ2tT+GpT3+AfI=
 			</data>
 			<key>hash2</key>
 			<data>
-			Pt9SQVyz3Iw1NEkUZNL9PPSiCR9h6BRjxNqx8+tRhms=
+			tFKJn7qTqS8WF88RLi7RV5YML8ycMQ98c6FsGQCF1Eo=
 			</data>
 		</dict>
 		<key>app/README.md</key>
@@ -12036,99 +12258,165 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZkhC712FXJgwp7upi0YZZux2ZW8=
+			1eJmc4oMvyWHL3l2GrsGCc3ke3g=
 			</data>
 			<key>hash2</key>
 			<data>
-			LZyUrUvAZ5nq8PkxBdfZVm7PqhdZTVivaHQ09PXFKfI=
+			mnorDHd6Sjg8PasKgXwPwhmnjC7BEzyQZ7mZR3RW69k=
 			</data>
 		</dict>
 		<key>app/app.component.ts</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			oMoOdoTTSfUolP+NR2D+OZSMQbE=
+			jHZCfkgRYr8AWAwyXCqEkVszE6w=
 			</data>
 			<key>hash2</key>
 			<data>
-			Np3TidkgPhkQu43/qiAHggyr52USToq6voLbOTMUA0w=
+			POWuAUMCURPlxeldzdufVWRbLdt2dVgVxszHcvQp4jU=
 			</data>
 		</dict>
 		<key>app/app.css</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6sB4Ck3/cR5cfUMRZAa8rYRiO4c=
+			QRuLZADUgXxVLD14Qqg68RbzA+s=
 			</data>
 			<key>hash2</key>
 			<data>
-			PV61BlWilxvBmw/crLbP+H8IyyKdXTEwi1VHCfamVW8=
+			U6goxoe+dpZsZRdXacTBywbkIgeguwvFi6Hc+//lXGk=
 			</data>
 		</dict>
 		<key>app/app.module.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NgcVypA9555+uM0Km6iV6t4RtFU=
+			iEbT6y6emDXG8GPgcwKXrd0kYoA=
 			</data>
 			<key>hash2</key>
 			<data>
-			+IyEmVPkPzUzV0p24eD7BbryCASvq5y6pDgVBxaa+fY=
+			LW61YyoaDYkHTCPujOztU+sa9mVEOY+F5OGWp5588BY=
 			</data>
 		</dict>
 		<key>app/app.module.ts</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			43a/Pn1Hfhx98bxCTgECPOIEDWE=
+			X3y3/TdBKJoFPbvdpCgjaTeI9QM=
 			</data>
 			<key>hash2</key>
 			<data>
-			soBRwHtWE9/eo8V3KwNQo9vvoKfd6u434EYeNx9J8PQ=
+			q/Ibf5XDviYlZ5uh501RcXfunhnQKK2J7avkO9MWiMs=
 			</data>
 		</dict>
 		<key>app/app.routing.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nxx2DMgxSvytGR47dywswIcm6jc=
+			14MoTIVA3sl53EuKwUyAI1kS/zk=
 			</data>
 			<key>hash2</key>
 			<data>
-			b3nKS0zAYRgJfxpxOnSTT4bKf7kU8/xP/KuyfAnBuuQ=
+			ePIHOewvEEOXY0F2odI0ITjKy2eAvAWhcQ2YqidlEz8=
 			</data>
 		</dict>
 		<key>app/app.routing.ts</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dUuc59/Zw6UDTL/gVM2YUjBVxOE=
+			eJgmg10SDgq7X5PCG9JgtbWYf6U=
 			</data>
 			<key>hash2</key>
 			<data>
-			lZ8JjYW5pUzZ0Z5hrVRX/g3aDY94zv4Q5f++mShwNDo=
+			+Pp/i+j1KSuRK0hJyOUGVavttjxPNpP+7IEmuw16ges=
 			</data>
 		</dict>
 		<key>app/drawer.component.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RmArea7921fqBQN7gmEdw8WKgEg=
+			ko5iWOpJwSe3Xbk6toSqfHiELw0=
 			</data>
 			<key>hash2</key>
 			<data>
-			mmW8Nu/MSixI5+IJ7PWr2/o/Q1wOepiPZ81yNkhW4mc=
+			PwOescFIZz5Oa0fNCiD7GkM6l77lj7tqLYqKXxNsCt0=
 			</data>
 		</dict>
 		<key>app/drawer.component.ts</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			z6sHyFxlaL31NMtkyXhBg5xT5Ro=
+			VFabqbwTlDNB1ElW3hFHBw/G8hA=
 			</data>
 			<key>hash2</key>
 			<data>
-			CPioiXbzFffBG++Sc3MS1OJIJGoiXLcksOyMwD52j1E=
+			n8hovcq11Stl0O/Lss+U/+iz/Yyx9W0aAZ3Fy9rbkz4=
+			</data>
+		</dict>
+		<key>app/images/cart.svg</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TrGYTZQcQFiRqNrR/jAjBEJTOkQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			BAhmcqZR1tMUkO1nFA9kcwGXu7jTp8DcM81AzTK7mMI=
+			</data>
+		</dict>
+		<key>app/images/category.svg</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cfdwKftO5xk6SXNf5IJ78K7Rh4M=
+			</data>
+			<key>hash2</key>
+			<data>
+			djVzsYjDo5Tyd++hkV3IOynoduxvcDkv4zaYNqLtFbY=
+			</data>
+		</dict>
+		<key>app/images/find.svg</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vUD+MhUdnHCcjgnhOgfX0bm5ZX4=
+			</data>
+			<key>hash2</key>
+			<data>
+			/zhE5o5G+qj8OI3kp3yU0bgzzLr4SkWEv/1Dvk1h5kE=
+			</data>
+		</dict>
+		<key>app/images/home.svg</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			eecKzTCcetx4/OdaI0hpZf4bhFg=
+			</data>
+			<key>hash2</key>
+			<data>
+			Noby7f2l8/9y4BqO5SILzp7zJS8MsFWI43U/U8URI34=
+			</data>
+		</dict>
+		<key>app/images/login.svg</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yFCAX378pclzM/K1uNTfSLIrdRM=
+			</data>
+			<key>hash2</key>
+			<data>
+			6DQdq4QBclbl9MEGQZ4vvoSdCIzmEr5dOfXrTVGVy7Y=
+			</data>
+		</dict>
+		<key>app/images/search.svg</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1QmsA6NvDq0oou2ct9q5Rg5kyiY=
+			</data>
+			<key>hash2</key>
+			<data>
+			30IOtfzwa+N7tcIU7aLk4rmTQuyX75dLx8AMiDbRaMo=
 			</data>
 		</dict>
 		<key>app/main.aot.ts</key>
@@ -12175,6 +12463,72 @@
 			eeX5yK5wKweTKA5toYLtfe6RaODw4gpTE69jfblLhEo=
 			</data>
 		</dict>
+		<key>app/pages/basket.component.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bG/s2LBdOesiCxB54yfOG+6j4UE=
+			</data>
+			<key>hash2</key>
+			<data>
+			5XFqkEjFxvAYAgk61J7L7uetfUP4415djZaTG4mBgfk=
+			</data>
+		</dict>
+		<key>app/pages/basket.component.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8OGvqDnnz3nTvP2TxqNYUOF1Wo0=
+			</data>
+			<key>hash2</key>
+			<data>
+			IVD3FSPkX8PWi1eQTWIjnLYHFMdrrR/o0njBbFAMM4w=
+			</data>
+		</dict>
+		<key>app/pages/category.component.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GJ9DqiNIkBuxyFxuToVW5+OGdKU=
+			</data>
+			<key>hash2</key>
+			<data>
+			Zuw8U/NZ0QyGHayhw7/18xMFS7cNOJqXJeahAlURLPk=
+			</data>
+		</dict>
+		<key>app/pages/category.component.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			eO7lpPeo0B3ys0Tl77SjckSAbrY=
+			</data>
+			<key>hash2</key>
+			<data>
+			ABuQExlh3M+59G/WYtb9Tw9GLl9wGjp/WNJvHX5VoIQ=
+			</data>
+		</dict>
+		<key>app/pages/find.component.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			N47SEPnPa89hhaDahgMo/jlXSrE=
+			</data>
+			<key>hash2</key>
+			<data>
+			kVgAi7TsNEd7NTTzGXjxKycgZ71PnaC73+BigwiXZF4=
+			</data>
+		</dict>
+		<key>app/pages/find.component.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CwdFa11wP14fePyXwIMAsDY4Yng=
+			</data>
+			<key>hash2</key>
+			<data>
+			TRVMdWI6KCdXAz5YgYW76AnmyGs7pWVql28tI4Tq8tw=
+			</data>
+		</dict>
 		<key>app/pages/home.component.js</key>
 		<dict>
 			<key>hash</key>
@@ -12201,22 +12555,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YUwA4NhOajJbGyvJ8yeEbwLqQ2o=
+			zTq8+wC26HGT0eeQva22O0zqNPA=
 			</data>
 			<key>hash2</key>
 			<data>
-			SJmOTJdDt836GEqzpxzmxFB5suweyG6+elkRrPRQjmk=
+			1jacETALcJex/XbdiYuuHp/jWQ9znWKLl8Zuinv1HtU=
 			</data>
 		</dict>
 		<key>app/pages/index.ts</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zaCrjHLVpBUKmhvx0DqfXKN7prc=
+			cOOEefvcDtX2bXOjQRmijzURDrc=
 			</data>
 			<key>hash2</key>
 			<data>
-			GABY5X1B4gBk+5FQpPD2y95/WIxKk1MjcAtfIcNswbU=
+			820FQ+nJ6fko8fMDoMRijh6rf1B+gPZ8V+zHtwC0je8=
 			</data>
 		</dict>
 		<key>app/pages/login.component.js</key>
@@ -12239,6 +12593,50 @@
 			<key>hash2</key>
 			<data>
 			atnm8Iq2A67ucWgFAp766Sy2jPIRn/HdmbwFoKbfOGE=
+			</data>
+		</dict>
+		<key>app/pages/products/product.model.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+Hm+YfHC3uMhNAKskgAB9yCn02k=
+			</data>
+			<key>hash2</key>
+			<data>
+			MozSc8RTwXwURIU1J1LsPKt/zqmrVomagw8Sbl47szI=
+			</data>
+		</dict>
+		<key>app/pages/products/product.model.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dMaqLzSLgO4FA2K/rJ/HohB1dvw=
+			</data>
+			<key>hash2</key>
+			<data>
+			yQ1fZp2HPeMqQdx4moS4ucZ2e6yGzmgEgBn/I6WP77I=
+			</data>
+		</dict>
+		<key>app/pages/search.component.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mJ7rvvFMz3JO6LBECJH+Sump5nU=
+			</data>
+			<key>hash2</key>
+			<data>
+			6OYONP7ZHMdBMPlDQJUP29m88brIAlrDwFK82P56ofw=
+			</data>
+		</dict>
+		<key>app/pages/search.component.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			avWW37xIh/pUnfzUQR9uXQ0+Dt4=
+			</data>
+			<key>hash2</key>
+			<data>
+			24GN+oCPELKUFPgob+xn92hCfN24cF/3hSJDNVXJusI=
 			</data>
 		</dict>
 		<key>app/sidedrawer/angular/index.d.ts</key>
@@ -12388,22 +12786,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uZlrn4YEwF5e8UbQd56HoOGgk3A=
+			2zRjcAMkIthOaIPjKEQ4gFxV0jU=
 			</data>
 			<key>hash2</key>
 			<data>
-			VClkIEEwPKDR0nO2u+Pzmmiegs+iSL6OjBVAOK0GsXs=
+			yYoWC/wzY7ULmYw/ePoUjulzV2VowFPUbF9uG2lNXqQ=
 			</data>
 		</dict>
 		<key>app/tab-navigation.component.ts</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xNjsvgbZPDVBTZ+dl+l4W7qaV1c=
+			i+M82xKcMOxW0breNjdHwxibA4E=
 			</data>
 			<key>hash2</key>
 			<data>
-			hoPS/LP8NSrhbe8zVJoRWVqUsd+nBATHCiNV9mMJrdI=
+			jyBQE34BNLpLpYOXEySPrN+Qht1c/MRJV0pI/zqMC7E=
 			</data>
 		</dict>
 		<key>app/tns_modules/@angular/animations/@angular/animations.es5.js</key>
@@ -22249,6 +22647,193 @@
 			<key>hash2</key>
 			<data>
 			6t8Q2TNlA5OqddYJ4GR5cOK/jw7a17Np2bxyREd4VRY=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-svg/angular/index.d.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uKSsg891J3+4vdrqhr2LYl6ASmk=
+			</data>
+			<key>hash2</key>
+			<data>
+			uIUasTkb9sHz7+7g0YM9jSW2ywlRCRtm55VO+X/41n0=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-svg/angular/index.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1dZLTYZmW1Pwq3Kr+aSZmnnd29I=
+			</data>
+			<key>hash2</key>
+			<data>
+			YW6tWnFBTFwSjTGFTfF3RJx8KoiAuQ19PFRe2BC3b/M=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-svg/angular/index.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			H8pGZP+gmlMHApQco1YBjrsLA4Y=
+			</data>
+			<key>hash2</key>
+			<data>
+			q4bUo7VUwHfUbNUPGumB42NI+cwiSZq8Sbu2MC/24ik=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-svg/angular/nativescript-svg-directives.d.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VvqJl9+CBxSDJO+UExjxvr2E3po=
+			</data>
+			<key>hash2</key>
+			<data>
+			r21+vz8JuzVTcZQm45vah84+Tjavvp2U7X1Xyf+Ygio=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-svg/angular/nativescript-svg-directives.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			J3utZBEqgwJBNDA51wCLEO/eEmU=
+			</data>
+			<key>hash2</key>
+			<data>
+			iVpMN8ZsnSrnTdVEAyJlBySLtKYL98nBU9kQYD2Hzlw=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-svg/angular/nativescript-svg-directives.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LXo2S7B6joCCw3NUszc+TNQqPqA=
+			</data>
+			<key>hash2</key>
+			<data>
+			GAXpY3gLY1/p891n2h9x7j3cemIrPyzTeSCWQGPxQRA=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-svg/angular/nativescript-svg-module.d.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7ZQujAov6Cy9A7YmJIdOa4JB3Hc=
+			</data>
+			<key>hash2</key>
+			<data>
+			9NuJNXMG8KGznTfeK5jGzG+ZgRcUyuGT2dG5an61N/0=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-svg/angular/nativescript-svg-module.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6g5Mf7CTO5cx0dWE5vI9kbCdBag=
+			</data>
+			<key>hash2</key>
+			<data>
+			8kUvAP+K5yfMJFpfMWXVeja6EMj/w1MoRPYITFCkwTs=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-svg/angular/nativescript-svg-module.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tQSgboKuwlipak4fFn43b3xZVdk=
+			</data>
+			<key>hash2</key>
+			<data>
+			L7/YSfk3YmEnDKYhiWBZs0WpX5BdiFZYyjN6qqX7QOI=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-svg/angular/package.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qx2G7RlEBD7258s0yJOzr3a7usI=
+			</data>
+			<key>hash2</key>
+			<data>
+			QXcRvAJZq8CkpyhbchGPb9loPKREFsAOtrRSYXTixRo=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-svg/hooks/before-livesync/nativescript-angular-sync.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GrgIyuF5e4r+bh/HeLZLiTKRkv8=
+			</data>
+			<key>hash2</key>
+			<data>
+			VFkMpiAi5iWUeoGAwfWTwD6RtZMODtiIMznxAskfi54=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-svg/package.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MqbTumCMw2O3TgNRAkGA3Sj/gus=
+			</data>
+			<key>hash2</key>
+			<data>
+			QIxdOdvbWjQIvO3omcpCI1R9CI63idG1t3KA8d3U4dc=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-svg/references.d.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kPUxea5gnDo3RcZpauUBwcvyeZc=
+			</data>
+			<key>hash2</key>
+			<data>
+			9be28/L86VOQEuo/tIbFQO+XcYd8ol8YG6P7HuvEhq8=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-svg/svg.common.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GK9Fc6zfMEYXAt399PrW/JkBfuc=
+			</data>
+			<key>hash2</key>
+			<data>
+			EPQvugvOfxwx79GJel7ernfi8hIogpafKNR2emr4yfM=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-svg/svg.d.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xV2jwbh8uU7oK58rWUD4+u/36DE=
+			</data>
+			<key>hash2</key>
+			<data>
+			WcqYRSU9AiqOesN4b+Ic8ClVqyxbYjuCWw0M/c2w3go=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-svg/svg.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sClIuzTSQnn9z6XAFHG8tt+FVk0=
+			</data>
+			<key>hash2</key>
+			<data>
+			x0lJxhC5ek5Qh1gY2+hmNzVGbvfFVyFi001+6ftAKks=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-svg/tsconfig.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iCDl1Sr2+jH6uQxF88S0eOJdaLM=
+			</data>
+			<key>hash2</key>
+			<data>
+			Nt73VsyM1srIqUkXDe47n8S61f7YFYv4ZVUrBBowFvY=
 			</data>
 		</dict>
 		<key>app/tns_modules/nativescript-telerik-ui/LICENSE.md</key>
