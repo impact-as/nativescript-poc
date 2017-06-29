@@ -3,11 +3,14 @@ import { NativeScriptModule } from "nativescript-angular/nativescript.module";
 import { AppRoutingModule } from "./app.routing";
 import { AppComponent } from "./app.component";
 
-import { NativeScriptUISideDrawerModule } from "./sidedrawer/angular";
+import { NativeScriptUISideDrawerModule } from "nativescript-telerik-ui/sidedrawer/angular";
 
 import { DrawerComponent } from './drawer.component';
 
 import { HomeComponent, LoginComponent, BasketComponent, CategoryComponent, SearchComponent, FindComponent } from './pages';
+
+import { CategoryService } from "./services/category.service";
+import { FilterService } from "./services/filter.service";
 
 import { TabNavigationComponent } from './tab-navigation.component';
 
@@ -43,7 +46,9 @@ import { TabNavigationComponent } from './tab-navigation.component';
         FindComponent
     ],
     providers: [
-    ],
+        CategoryService,
+        FilterService
+    ],      
     schemas: [
         NO_ERRORS_SCHEMA
     ]

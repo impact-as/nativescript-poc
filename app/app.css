@@ -1,4 +1,7 @@
 @import "nativescript-theme-core/css/sky.css";
+@import "list.css";
+@import "category.css";
+@import "detail.css";
 
 .basket-icon {
     top:10;

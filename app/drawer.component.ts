@@ -2,8 +2,8 @@ import { Component, ViewChild, OnInit, AfterViewInit, ChangeDetectorRef } from "
 import { Page } from "ui/page";
 import { ActionItem } from "ui/action-bar"; 
 import { Observable } from "data/observable";
-import { RadSideDrawerComponent, SideDrawerType } from "./sidedrawer/angular";
-import { RadSideDrawer } from './sidedrawer';
+import { RadSideDrawerComponent, SideDrawerType } from "nativescript-telerik-ui/sidedrawer/angular";
+import { RadSideDrawer } from 'nativescript-telerik-ui/sidedrawer/';
 
 @Component({
     selector: "tk-sidedrawer-getting-started",
