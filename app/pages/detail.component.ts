@@ -53,10 +53,8 @@ export class DetailComponent {
     ngOnInit() {
         this.pageRoute.params
         .subscribe(params => {
-            debugger;
             this.filterService.getCategoryProducts(params['categoryId'])
                 .subscribe(products => {
-                    debugger;
                     this.product = products.find(a => a.Id === params['productId']);
                     products.forEach(item => {
                         this.relatedProducts.push(item);
