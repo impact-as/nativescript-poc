@@ -1,13 +1,17 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptModule } from "nativescript-angular/nativescript.module";
+import { NativeScriptHttpModule } from "nativescript-angular/http";
 import { AppRoutingModule } from "./app.routing";
 import { AppComponent } from "./app.component";
 
-import { NativeScriptUISideDrawerModule } from "./sidedrawer/angular";
+import { NativeScriptUISideDrawerModule } from "nativescript-telerik-ui/sidedrawer/angular";
 
 import { DrawerComponent } from './drawer.component';
 
-import { HomeComponent, LoginComponent, BasketComponent, CategoryComponent, SearchComponent, FindComponent } from './pages';
+import { HomeComponent, LoginComponent, BasketComponent, CategoryComponent, SearchComponent, FindComponent, ListComponent, DetailComponent } from './pages';
+
+import { CategoryService } from "./services/category.service";
+import { FilterService } from "./services/filter.service";
 
 import { TabNavigationComponent } from './tab-navigation.component';
 
@@ -20,6 +24,7 @@ import { TabNavigationComponent } from './tab-navigation.component';
     ],
     imports: [
         NativeScriptModule,
+        NativeScriptHttpModule,
         AppRoutingModule,
         NativeScriptUISideDrawerModule
     ],
@@ -32,18 +37,24 @@ import { TabNavigationComponent } from './tab-navigation.component';
         SearchComponent,
         TabNavigationComponent,
         DrawerComponent,
-        FindComponent
+        FindComponent,
+        ListComponent,
+        DetailComponent
     ],
     entryComponents:[
-       HomeComponent, 
+        HomeComponent, 
         LoginComponent, 
         BasketComponent, 
         CategoryComponent, 
         SearchComponent,
-        FindComponent
+        FindComponent,
+        ListComponent,
+        DetailComponent
     ],
     providers: [
-    ],
+        CategoryService,
+        FilterService
+    ],      
     schemas: [
         NO_ERRORS_SCHEMA
     ]

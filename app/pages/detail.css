@@ -1,0 +1,32 @@
+.container {
+	margin: 40px;
+}
+.container.border {
+	border-width: 1px;
+	border-color:grey;
+}
+
+.image {
+	margin: 20px;
+}
+
+.price {
+	font-size: 30px;
+}
+
+.title {
+	font-size: 16px;
+	color: #777;
+	text-transform: none;
+}
+.button {
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	background-color: green;
+	font-weight: bold;
+	padding: 25px 0;
+	color:white;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	border: none;
+}
