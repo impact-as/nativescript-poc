@@ -14,6 +14,7 @@ import { HomeComponent, BasketComponent, CategoryComponent, SearchComponent, Fin
 
 import { CategoryService } from "./services/category.service";
 import { FilterService } from "./services/filter.service";
+import { SearchService } from "./services/search.service";
 
 import { TabNavigationComponent } from './tab-navigation.component';
 
@@ -54,7 +55,8 @@ import { TabNavigationComponent } from './tab-navigation.component';
     ],
     providers: [
         CategoryService,
-        FilterService
+        FilterService,
+        SearchService
     ],      
     schemas: [
         NO_ERRORS_SCHEMA
