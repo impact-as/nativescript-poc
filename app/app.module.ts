@@ -10,7 +10,7 @@ import { AuthModule } from "./auth/auth.module";
 
 import { DrawerComponent } from './drawer.component';
 
-import { HomeComponent, LoginComponent, BasketComponent, CategoryComponent, SearchComponent, FindComponent, ListComponent, DetailComponent } from './pages';
+import { HomeComponent, BasketComponent, CategoryComponent, SearchComponent, FindComponent, ListComponent, DetailComponent } from './pages';
 
 import { CategoryService } from "./services/category.service";
 import { FilterService } from "./services/filter.service";
@@ -34,7 +34,6 @@ import { TabNavigationComponent } from './tab-navigation.component';
     declarations: [
         AppComponent,
         HomeComponent, 
-        LoginComponent, 
         BasketComponent, 
         CategoryComponent, 
         SearchComponent,
@@ -46,7 +45,6 @@ import { TabNavigationComponent } from './tab-navigation.component';
     ],
     entryComponents:[
         HomeComponent, 
-        LoginComponent, 
         BasketComponent, 
         CategoryComponent, 
         SearchComponent,

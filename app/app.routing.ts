@@ -2,12 +2,11 @@ import { NgModule } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { Routes } from "@angular/router";
 
-import { AuthGuard } from "./auth/auth-guard.service"
-
-import { HomeComponent, LoginComponent, SearchComponent, CategoryComponent, FindComponent, ListComponent, DetailComponent } from './pages';
+import { HomeComponent, SearchComponent, CategoryComponent, FindComponent, ListComponent, DetailComponent } from './pages';
+import { LoginComponent } from "./auth/login.component";
 
 const routes: Routes = [
-    { path: "", component: HomeComponent, canActivate:[ ]},
+    { path: "", component: HomeComponent},
     { path: "login", component: LoginComponent },
     { path: "search", component: SearchComponent },
     { path: "category", component: CategoryComponent },

@@ -2,6 +2,8 @@
 import { platformNativeScriptDynamic } from "nativescript-angular/platform";
 import * as firebase from "nativescript-plugin-firebase";
 
+import { AuthService } from "./auth/auth.service";
+
 
 import { AppModule } from "./app.module";
 
@@ -17,10 +19,10 @@ firebase.init({
   onAuthStateChanged: (data: any) => {
     console.log(JSON.stringify(data))
     if (data.loggedIn) {
-      // AuthService.token = data.user.uid;
+       AuthService.token = data.user.uid;
     }
     else {
-      // AuthService.token = "";
+       AuthService.token = "";
     }
   },
   iOSEmulatorFlush: true

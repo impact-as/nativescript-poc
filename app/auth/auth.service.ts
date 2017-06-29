@@ -17,19 +17,21 @@ const tokenKey: string = "fireBaseToken";
 export class AuthService {
   redirectUrl: string = "";
 
-  loginWithPassword(loginOptions: firebase.FirebasePasswordLoginOptions): Observable<firebase.User> {
+  loginWithPassword(email: string, password: string): Observable<firebase.User> {
     return Observable.fromPromise(
       firebase.login({
         type: firebase.LoginType.PASSWORD,
-        passwordOptions: loginOptions
+        passwordOptions: {email: email, password: password}
       })
     );
   }
   
-  loginWithGoogle():void{
-    firebase.login({
-      type: firebase.LoginType.GOOGLE,
-    });
+  loginWithGoogle():Observable<firebase.User> {
+    return Observable.fromPromise(
+      firebase.login({
+        type: firebase.LoginType.GOOGLE,
+      })
+    );
   }
 
   logout(): Observable<any> {
