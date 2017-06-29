@@ -5,6 +5,8 @@ import { AppComponent } from "./app.component";
 
 import { NativeScriptUISideDrawerModule } from "nativescript-telerik-ui/sidedrawer/angular";
 
+import { AuthModule } from "./auth/auth.module";
+
 import { DrawerComponent } from './drawer.component';
 
 import { HomeComponent, LoginComponent, BasketComponent, CategoryComponent, SearchComponent, FindComponent } from './pages';
@@ -24,7 +26,8 @@ import { TabNavigationComponent } from './tab-navigation.component';
     imports: [
         NativeScriptModule,
         AppRoutingModule,
-        NativeScriptUISideDrawerModule
+        NativeScriptUISideDrawerModule,
+        AuthModule
     ],
     declarations: [
         AppComponent,
@@ -38,7 +41,7 @@ import { TabNavigationComponent } from './tab-navigation.component';
         FindComponent
     ],
     entryComponents:[
-       HomeComponent, 
+        HomeComponent, 
         LoginComponent, 
         BasketComponent, 
         CategoryComponent, 

@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "1049449164102",
+    "firebase_url": "https://impactbootcampapp.firebaseio.com",
+    "project_id": "impactbootcampapp",
+    "storage_bucket": "impactbootcampapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1049449164102:android:914f1c1e540ae0e1",
+        "android_client_info": {
+          "package_name": "dk.emilskovsen.ImpactBootcampApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1049449164102-quhnhm7hjsbp42dfe2ato2eg5nq04gu1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJwZLteALdMsZ5YHZ-_Fs7m1eU_l6NtgI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1049449164102:android:04227395aef501d1",
+        "android_client_info": {
+          "package_name": "org.nativescript.impactbynativescript"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1049449164102-quhnhm7hjsbp42dfe2ato2eg5nq04gu1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJwZLteALdMsZ5YHZ-_Fs7m1eU_l6NtgI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

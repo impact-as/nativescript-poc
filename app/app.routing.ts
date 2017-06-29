@@ -2,10 +2,12 @@ import { NgModule } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { Routes } from "@angular/router";
 
+import { AuthGuard } from "./auth/auth-guard.service"
+
 import { HomeComponent, LoginComponent, SearchComponent, CategoryComponent, FindComponent, ListComponent, DetailComponent } from './pages';
 
 const routes: Routes = [
-    { path: "", component: HomeComponent },
+    { path: "", component: HomeComponent, canActivate:[ ]},
     { path: "login", component: LoginComponent },
     { path: "search", component: SearchComponent },
     { path: "category", component: CategoryComponent },
