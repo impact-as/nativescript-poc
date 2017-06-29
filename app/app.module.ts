@@ -9,6 +9,9 @@ import { DrawerComponent } from './drawer.component';
 
 import { HomeComponent, LoginComponent, BasketComponent, CategoryComponent, SearchComponent, FindComponent } from './pages';
 
+import { CategoryService } from "./services/category.service";
+import { FilterService } from "./services/filter.service";
+
 import { TabNavigationComponent } from './tab-navigation.component';
 
 // Uncomment and add to NgModule imports  if you need to use the HTTP wrapper
@@ -43,7 +46,9 @@ import { TabNavigationComponent } from './tab-navigation.component';
         FindComponent
     ],
     providers: [
-    ],
+        CategoryService,
+        FilterService
+    ],      
     schemas: [
         NO_ERRORS_SCHEMA
     ]
