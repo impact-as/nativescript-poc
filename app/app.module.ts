@@ -3,7 +3,7 @@ import { NativeScriptModule } from "nativescript-angular/nativescript.module";
 import { AppRoutingModule } from "./app.routing";
 import { AppComponent } from "./app.component";
 
-import { NativeScriptUISideDrawerModule } from "./sidedrawer/angular";
+import { NativeScriptUISideDrawerModule } from "nativescript-telerik-ui/sidedrawer/angular";
 
 import { DrawerComponent } from './drawer.component';
 
