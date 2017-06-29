@@ -40,7 +40,7 @@ export class ListComponent {
     public isLoading = false;       
     private categoryId: string;
     constructor(
-        private http:Http, 
+        private http: Http, 
         private routerExtensions: RouterExtensions, 
         private pageRoute: ActivatedRoute, 
         private filterService: FilterService) { 
