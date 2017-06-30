@@ -22,7 +22,7 @@ import "rxjs/add/operator/do";
         
         <ListView [items]="products | async" (itemTap)="onItemTap($event)" class="list-group">
             <ng-template let-product="item" let-i="index" let-odd="odd" let-even="even">
-                <GridLayout width="100%" columns="60, *, 80" rows="25,20,20" style="padding:0px;">
+                <GridLayout width="100%" columns="60, *, 80" rows="25,20,20" style="padding:0px;" [class.even]="even">
                     <Image width="80" rowSpan="3" row="0" col="0" [src]="'https://bogogide.godkend.dk' + product.PrimaryImageUrl + '&width=100&height=100'" class="image" width="50" height="50"></Image>
                     <Label row="0" col="1" [text]="product.Name" class="label"></Label>
                     <Label row="1" col="1" [text]="product.ItemDistributor + '/' + product.ItemPublisher" class="label mini"></Label>
