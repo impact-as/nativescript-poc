@@ -11,20 +11,28 @@ import { AuthModule } from "./auth/auth.module";
 import { NativeScriptUIListViewModule } from "nativescript-telerik-ui-pro/listview/angular";
 import { DrawerComponent } from './drawer.component';
 
-import { HomeComponent, BasketComponent, BasketLineComponent, CategoryComponent, SearchComponent, FindComponent, ListComponent, DetailComponent } from './pages';
+import { HomeComponent, BasketComponent, BasketLineComponent, CategoryComponent, SearchComponent, FindComponent, ListComponent, DetailComponent, StoreComponent } from './pages';
 
 import { CategoryService } from "./services/category.service";
 import { FilterService } from "./services/filter.service";
 import { SearchService } from "./services/search.service";
 import { BasketService } from "./services/basket.service";
+import { StoresService } from "./services/stores.service";
 import { ProductService } from "./services/product.service";
-
-
 
 import { TabNavigationComponent } from './tab-navigation.component';
 
 // Uncomment and add to NgModule imports  if you need to use the HTTP wrapper
 // import { NativeScriptHttpModule } from "nativescript-angular/http";
+
+
+import * as platform from "platform";
+declare var GMSServices: any;
+
+if(platform.isIOS) {
+    GMSServices.provideAPIKey("AIzaSyAtRVvG3Be3xXiZFR7xp-K-9hy4nZ4hMFs");
+}
+
 
 @NgModule({
     bootstrap: [
@@ -49,7 +57,8 @@ import { TabNavigationComponent } from './tab-navigation.component';
         DrawerComponent,
         FindComponent,
         ListComponent,
-        DetailComponent
+        DetailComponent,
+        StoreComponent
     ],
     entryComponents:[
         HomeComponent, 
@@ -58,14 +67,16 @@ import { TabNavigationComponent } from './tab-navigation.component';
         SearchComponent,
         FindComponent,
         ListComponent,
-        DetailComponent
+        DetailComponent,
+        StoreComponent
     ],
     providers: [
         CategoryService,
         FilterService,
         SearchService,
         BasketService,
-        ProductService
+        StoresService,
+        ProductService,
     ],      
     schemas: [
         NO_ERRORS_SCHEMA
