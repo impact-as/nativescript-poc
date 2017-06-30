@@ -3,24 +3,37 @@ import { Http, Headers, Response } from "@angular/http";
 import { Observable } from 'rxjs/Observable';
 import { RouterExtensions } from "nativescript-angular/router";
 import { ActivatedRoute } from "@angular/router";
-
-import { FilterService } from "../services/filter.service";
+import { ListViewEventData, RadListView } from "nativescript-telerik-ui-pro/listview";
+import { RadListViewComponent } from "nativescript-telerik-ui-pro/listview/angular";
+import { FilterService, FilterOutputViewModel, FacetOutputViewModel } from "../services/filter.service";
 import { ProductModel } from "./products/product.model";
 
 import "rxjs/add/operator/map";
 import "rxjs/add/operator/do";
 // <Image class="list-to-basket" (tap)="addtobasket(product.Id)" src="~/images/cart.png" width="20" height="20"></Image>
 
-
+        
 @Component({
   selector: "list",
   template: `
+
     <StackLayout orientation="vertical">
-        <Button [text]="'ALL'" class="submit-button" (tap)="everything()"></Button>
-        <Button [text]="'HARDBACK'" class="submit-button" (tap)="hardbackOnly()"></Button>
-        <Button [text]="'INDBUNDET'" (tap)="indbundetOnly()"></Button>
-        
-        <ListView [items]="products | async" (itemTap)="onItemTap($event)" class="list-group">
+        <GridLayout tkExampleTitle tkToggleNavButton>
+            <RadListView [items]="facetResult" 
+                          class="list-group" 
+                          selectionBehavior="Press" 
+                          multipleSelection="true"
+                          (itemSelected)="updateQuery($event)"
+                          (itemDeselected)="updateQuery($event)">
+                <ng-template tkListItemTemplate let-item="item" let-i="index" let-odd="odd" let-even="even">
+                    <StackLayout width="100%" columns="*" rows="*" style="padding:0px;" ios:class="iosListItemStackLayout" android:class="androidListItemStackLayout">
+                        <Label ios:class="iosNameLabel" android:class="androidNameLabel" [text]="item.Query.Name"></Label>
+                    </StackLayout>
+                </ng-template>
+            </RadListView>
+        </GridLayout>
+
+        <ListView [items]="products" (itemTap)="onItemTap($event)" class="list-group">
             <ng-template let-product="item" let-i="index" let-odd="odd" let-even="even">
                 <GridLayout width="100%" columns="60, *, 80" rows="25,20,20" style="padding:0px;">
                     <Image width="80" rowSpan="3" row="0" col="0" [src]="'https://bogogide.godkend.dk' + product.PrimaryImageUrl + '&width=100&height=100'" class="image" width="50" height="50"></Image>
@@ -40,7 +53,10 @@ import "rxjs/add/operator/do";
 })
 export class ListComponent {
     // public filter: Observable<FilterOutputViewModel> = null;
-    public products: Observable<ProductModel[]> = null;
+    public products: ProductModel[]= null;
+    public facets: FacetOutputViewModel[] = null;
+    public facetResult: any;
+    public filter: Observable<FilterOutputViewModel>;
     public isLoading = false;       
     private categoryId: string;
     constructor(
@@ -52,27 +68,23 @@ export class ListComponent {
 
         this.pageRoute.params.subscribe( params => {
             this.categoryId = params['id'];
-            this.products = this.filterService.getCategoryProducts(this.categoryId)
-                                              .finally(() => this.isLoading = false);
+            this.filter = this.filterService.getCategoryFilter(this.categoryId);
+
+            this.filter.subscribe(data => {
+                this.products = data.Products;
+                this.facets = data.Facets.filter(data => {
+                    return data.Control === 'Dropdown' && data.Key !== 'ItemGroup';
+                });
+                this.isLoading = false;
+
+                
+                this.facetResult = this.facets[1].FacetResults;
+                console.log('facets', this.facetResult);
+            });
+
         });
     }
-
-    public everything() {
-        this.products = this.getProductsByFormat(); 
-    }
-
-    public addtobasket(id) {
-        console.log(id);
-    }
-
-    public hardbackOnly() {
-        this.products = this.getProductsByFormat("HARDBACK"); 
-    }
-
-    public indbundetOnly() {
-        this.products = this.getProductsByFormat("INDBUNDET"); 
-    }    
-
+ 
     public getProductsByFormat(format: string = "") {
         this.isLoading = true;
         return this.filterService.getCategoryFilter(this.categoryId, format ? {ItemBinding: format}: {})
@@ -80,20 +92,57 @@ export class ListComponent {
                             .finally(() => this.isLoading = false);
     }
 
+    public getFacets() {
+        this.isLoading = true;
+        return this.filterService.getCategoryFilter(this.categoryId, {})
+                            .map(filter => {
+                                console.log('filter', filter);
+                                return filter.Facets;
+                            })    
+                            .finally(() => this.isLoading = false);
+    }
+
     public onItemTap(args) {
         let product = null;
-        this.products.subscribe(items=> {
-            product = items[args.index];
-            this.routerExtensions.navigate(["/detail", 
-                this.categoryId,
-                product.Id
-            ], {
-                transition: {
-                    name: "slide",
-                    duration: 300,
-                    curve: "linear"
-                }
-            });
+        product = this.products[args.index];
+        this.routerExtensions.navigate(["/detail", 
+            this.categoryId,
+            product.Id
+        ], {
+            transition: {
+                name: "slide",
+                duration: 300,
+                curve: "linear"
+            }
         });
     }
+
+    public onItemSelected(args: ListViewEventData) {
+        let listview = args.object as RadListView;
+        // console.log('onItemSelected', listview.getSelectedItems());
+    }
+
+    public onItemDeselected(args: ListViewEventData) {
+        let listview = args.object as RadListView;
+        // console.log('onItemDeselected', listview.getSelectedItems());
+    }
+
+    public updateQuery(args: ListViewEventData) {
+        const listview = args.object as RadListView;
+        let query = {
+            ItemBinding: listview.getSelectedItems().map(data => data.Query.Value)
+        }
+        this.updateProductList(query);
+    }
+
+    public updateProductList(query: any) {
+        console.log('query', query);
+
+        this.filter = this.filterService.getCategoryFilter(this.categoryId, query);
+
+        this.filter.subscribe(data => {
+            console.log('new data', data);
+        });
+    }
+
 }

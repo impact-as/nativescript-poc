@@ -53,14 +53,9 @@ export class DetailComponent {
     }
 
     ngOnInit() {
-        this.pageRoute.params.subscribe(params => {
-            this.categoryId = params['categoryId'];
-
-            //force repaint when tapping related products
-            this.isLoading = true;
-            this.product = null;
-
-            this.filterService.getCategoryProducts(this.categoryId)
+        this.pageRoute.params
+        .subscribe(params => {
+            this.filterService.getCategoryProducts(params['categoryId'])
                 .subscribe(products => {
                     this.product = products.find(a => a.Id === params['productId']);
                     products.forEach(item => {
