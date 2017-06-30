@@ -6,7 +6,11 @@ import { Component } from '@angular/core';
         <StackLayout padding="10">
             <Label text="Welcome to IMPACT by NativeScript" class="header"></Label>
             <ScrollView>
+            
+
                 <StackLayout>
+
+
                     <Label class="text" textWrap="true" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae ultricies quam. Nullam porttitor scelerisque purus, a pretium sem accumsan eget. Morbi ut posuere elit, nec mattis elit. Morbi ac orci placerat leo tincidunt tempus a sed justo. Phasellus ut massa quam. Suspendisse scelerisque tempus quam, eget mollis ligula suscipit id. Cras vitae enim vel massa malesuada scelerisque. Praesent gravida faucibus sem, auctor dapibus arcu blandit non. Donec eget iaculis odio, nec rutrum felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;"></Label>
                     <Label class="text" textWrap="true" text="Nulla facilisi. Donec odio lectus, luctus at tortor a, aliquam eleifend massa. Proin vitae leo sit amet neque commodo pharetra. Pellentesque iaculis congue dolor nec gravida. Cras ullamcorper erat at lorem laoreet imperdiet ac in lectus. Phasellus eget neque scelerisque, ultricies arcu in, luctus leo. Proin in consectetur elit, nec imperdiet nunc. Proin porta nisi sit amet euismod laoreet. Phasellus ipsum arcu, tincidunt tempus tempor non, egestas sit amet nibh. Duis vulputate tristique libero, vel sodales nisl tincidunt eget. Mauris et tortor ut ligula malesuada ultricies. Nulla imperdiet enim nec ligula ultricies, quis varius eros consequat. Morbi at sem venenatis, finibus tortor vestibulum, bibendum leo."></Label>
                     <Label class="text" textWrap="true" text="Duis non arcu sed massa aliquam volutpat. Vivamus hendrerit luctus vestibulum. Quisque vel ultricies lorem. Aenean efficitur ipsum eget ante venenatis varius. Nam a mi massa. Quisque convallis eros ligula, sit amet pellentesque nibh rutrum vel. Nam mattis malesuada fermentum. Curabitur maximus volutpat lacus, quis maximus diam egestas at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer in mattis massa, mattis lacinia nunc. Fusce rutrum leo a hendrerit rhoncus. Etiam a tellus lorem. Cras hendrerit non enim ac pharetra."></Label>
