@@ -4,8 +4,8 @@ import { RouterExtensions } from "nativescript-angular/router";
 import { Page } from "ui/page";
 import { ActionItem } from "ui/action-bar"; 
 import { Observable } from "data/observable";
-import { RadSideDrawerComponent, SideDrawerType } from "nativescript-telerik-ui/sidedrawer/angular";
-import { RadSideDrawer } from 'nativescript-telerik-ui/sidedrawer/';
+import { RadSideDrawerComponent, SideDrawerType } from "nativescript-telerik-ui-pro/sidedrawer/angular";
+import { RadSideDrawer } from 'nativescript-telerik-ui-pro/sidedrawer/';
 
 import * as application from "application";
 import { AndroidApplication, AndroidActivityBackPressedEventData } from "application";

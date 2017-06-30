@@ -6,13 +6,14 @@ import { AuthService } from "../auth/auth.service";
 @Component({
     selector: 'page-welcome',
     template:`
-      <StackLayout style.paddingTop="10px">
-        <Label [text]="message"></Label>
+      <StackLayout>
+        <StackLayout height="30%"></StackLayout>
+        <Label text="Login for at se kurv eller fortsæt uden at være logget ind" textWrap="true"></Label>
         <ScrollView> 
-          <StackLayout>
-            <Button text="Login" 
+          <StackLayout paddingTop="20px">  
+            <Button class="button primary" text="Login" 
               [nsRouterLink]="['/login']"></Button>
-            <Button text="Continue without logging in"
+            <Button class="button" text="Continue without logging in"
               [nsRouterLink]="['/home']"></Button>
           </StackLayout>  
         </ScrollView>
