@@ -59,7 +59,7 @@ import { TabNavigationComponent } from './tab-navigation.component';
     providers: [
         CategoryService,
         FilterService,
-        SearchService
+        SearchService,
         BasketService
     ],      
     schemas: [
