@@ -14,9 +14,9 @@ import { isAndroid } from "platform";
 @Component({
     selector: 'ns-app',
     template: `
-<RadSideDrawer tkExampleTitle tkToggleNavButton height="100%">
+<RadSideDrawer tkExampleTitle tkToggleNavButton height="100%" style.zIndex="200">
     <AbsoluteLayout tkDrawerContent class="sideStackLayout" width="100%" height="100%">
-        <Image top="10" left="250" src="~/images/close.png" width="20" height="20" (tap)="onCloseDrawerTap()"></Image>
+        <Image top="10" left="250" src="~/images/close.png" width="20" height="20" (tap)="onCloseDrawerTap()" style.zIndex="100"></Image>
         <basket top="0" left="0"></basket>
     </AbsoluteLayout>
     <FlexboxLayout flexDirection="column" tkMainContent>
