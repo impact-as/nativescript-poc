@@ -1,5 +1,4 @@
 export { HomeComponent } from './home.component'; 
-export { LoginComponent } from './login.component'; 
 //export { BasketComponent } from './basket.component';
 export { BasketComponent } from './basket/basket.component';
 export { BasketLineComponent } from './basket/basket-line/basket-line.component';
