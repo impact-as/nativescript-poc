@@ -1,3 +1,4 @@
+@import url(nativescript-theme-core/css/core.light.css);.image{margin:5px}.label{margin-left:20px;font-size:15px}.label.mini{font-size:11px}.label.price{font-size:21px}.list-to-basket{margin:15px}.iosListItemStackLayout{padding-left:50}.iosNameLabel{font-size:20}.iosDescriptionLabel{font-size:13}.androidListItemStackLayout{padding-left:16}.androidNameLabel{font-size:20}.androidDescriptionLabel{font-size:13}
 @import "nativescript-theme-core/css/core.light.css";
 
 .image {
@@ -16,4 +17,24 @@
 
 .list-to-basket {
     margin:15px;
+}
+
+/* ios styles */
+.iosListItemStackLayout {
+    padding-left: 40;
+    padding-bottom: 10;
+    padding-top: 10;
+}
+
+.iosNameLabel {
+    font-size: 14
+}
+
+/* Android styles */
+.androidListItemStackLayout {
+    padding-left: 16;
+}
+
+.androidNameLabel {
+    font-size: 14
 }

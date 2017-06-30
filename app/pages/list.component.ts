@@ -16,37 +16,33 @@ import "rxjs/add/operator/do";
 @Component({
   selector: "list",
   template: `
-        <GridLayout rows="200, *">
-            
-            <RadListView row="0" [items]="facetResult" 
-                        class="list-group" 
-                        selectionBehavior="Press" 
-                        multipleSelection="true"
-                        (itemSelected)="updateQuery($event)"
-                        (itemDeselected)="updateQuery($event)">
-                
-                <ng-template tkListItemTemplate let-item="item" let-i="index" let-odd="odd" let-even="even">
-                    <StackLayout width="100%" columns="*" rows="*" style="padding:0px;" ios:class="iosListItemStackLayout" android:class="androidListItemStackLayout">
-                        <Label ios:class="iosNameLabel" android:class="androidNameLabel" [text]="item.Query.Name"></Label>
-                    </StackLayout>
-                </ng-template>
-            </RadListView>
-            
+     <GridLayout rows="200, *" tkExampleTitle tkToggleNavButton>    
+        <RadListView row="0" [items]="facetResult" 
+                    selectionBehavior="Press" 
+                    multipleSelection="true"
+                    (itemSelected)="updateQuery($event)"
+                    (itemDeselected)="updateQuery($event)">
+            <ng-template tkListItemTemplate let-item="item" let-i="index" let-odd="odd" let-even="even">
+                <StackLayout ios:class="iosListItemStackLayout" android:class="androidListItemStackLayout">
+                    <Label ios:class="iosNameLabel" android:class="androidNameLabel" [text]="item.Query.Name + ' (' + item.Count + ')'"></Label>
+                </StackLayout>
+            </ng-template>
+        </RadListView>
 
-            <ListView row="1" [items]="products" (itemTap)="onItemTap($event)" class="list-group">
-                <ng-template let-product="item" let-i="index" let-odd="odd" let-even="even">
-                    <GridLayout width="100%" columns="60, *, 80" rows="25,20,20" style="padding:0px;">
-                        <Image width="80" rowSpan="3" row="0" col="0" [src]="'https://bogogide.godkend.dk' + product.PrimaryImageUrl + '&width=100&height=100'" class="image" width="50" height="50"></Image>
-                        <Label row="0" col="1" [text]="product.Name" class="label"></Label>
-                        <Label row="1" col="1" [text]="product.ItemDistributor + '/' + product.ItemPublisher" class="label mini"></Label>
-                        <Label row="2" col="1" [text]="product.PricesSanitized.RetailPriceLabel" class="label mini"></Label>
-                        <Label row="0" col="2" [text]="product.PricesSanitized.ActualPriceAmount" class="label price"></Label>
+        <ListView row="1" [items]="products" (itemTap)="onItemTap($event)" class="list-group">
+            <ng-template let-product="item" let-i="index" let-odd="odd" let-even="even">
+                <GridLayout width="100%" columns="60, *, 80" rows="25,20,20" style="padding:0px;">
+                    <Image width="80" rowSpan="3" row="0" col="0" [src]="'https://bogogide.godkend.dk' + product.PrimaryImageUrl + '&width=100&height=100'" class="image" width="50" height="50"></Image>
+                    <Label row="0" col="1" [text]="product.Name" class="label"></Label>
+                    <Label row="1" col="1" [text]="product.ItemDistributor + '/' + product.ItemPublisher" class="label mini"></Label>
+                    <Label row="2" col="1" [text]="product.PricesSanitized.RetailPriceLabel" class="label mini"></Label>
+                    <Label row="0" col="2" [text]="product.PricesSanitized.ActualPriceAmount" class="label price"></Label>
 
-                        <Label class="button" height="50" width="40" (tap)="addtobasket(product.Id)" text="+" col="2" row="1"></Label>
+                    <Label class="button" height="50" width="40" (tap)="addtobasket(product.Id)" text="+" col="2" row="1"></Label>
 
-                    </GridLayout>
-                </ng-template>
-            </ListView>
+                </GridLayout>
+            </ng-template>
+        </ListView>
         <ActivityIndicator [busy]="isLoading" [visibility]="isLoading ? 'visible' : 'collapse'" row="1" horizontalAlignment="center" verticalAlignment="center"></ActivityIndicator>
     </GridLayout>
   `
@@ -79,8 +75,9 @@ export class ListComponent {
                 this.isLoading = false;
 
                 
-                this.facetResult = this.facets[1].FacetResults;
-                console.log('facets', this.facetResult);
+                this.facetResult = this.facets[1].FacetResults.filter(data => {
+                    return data.Count > 0;
+                });
             });
         });
     }
@@ -137,12 +134,12 @@ export class ListComponent {
 
     public updateProductList(query: any) {
         this.isLoading = true;
+        // console.log('query', query);
 
         this.filter = this.filterService.getCategoryFilter(this.categoryId, query);
 
-
         this.filter.subscribe(data => {
-            console.log('data', data);
+            // console.log('data', data);
             this.products = data.Products;
 
             this.facets = data.Facets.filter(data => {
