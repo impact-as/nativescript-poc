@@ -10,7 +10,7 @@ import { AuthModule } from "./auth/auth.module";
 
 import { DrawerComponent } from './drawer.component';
 
-import { HomeComponent, BasketComponent, BasketLineComponent, CategoryComponent, SearchComponent, FindComponent, ListComponent, DetailComponent, StoreComponent } from './pages';
+import { HomeComponent, BasketComponent, BasketLineComponent, CategoryComponent, SearchComponent, FindComponent, ListComponent, DetailComponent, StoreComponent, WelcomeComponent } from './pages';
 
 import { CategoryService } from "./services/category.service";
 import { FilterService } from "./services/filter.service";
@@ -56,7 +56,8 @@ if(platform.isIOS) {
         FindComponent,
         ListComponent,
         DetailComponent,
-        StoreComponent
+        StoreComponent,
+        WelcomeComponent
     ],
     entryComponents:[
         HomeComponent, 

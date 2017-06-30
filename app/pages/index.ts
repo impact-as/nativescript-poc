@@ -8,3 +8,4 @@ export { FindComponent } from './find.component';
 export { ListComponent } from "./list.component";
 export { DetailComponent } from "./detail.component";
 export { StoreComponent } from './store.component';
+export { WelcomeComponent } from "./welcome.component";

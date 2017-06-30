@@ -15,7 +15,7 @@ import { isAndroid } from "platform";
     selector: 'ns-app',
     template: `
 <RadSideDrawer tkExampleTitle tkToggleNavButton height="100%" style.zIndex="200">
-    <AbsoluteLayout tkDrawerContent class="sideStackLayout" width="100%" height="100%">
+    <AbsoluteLayout *ngIf="!hideBasket()" tkDrawerContent class="sideStackLayout" width="100%" height="100%">
         <Image top="10" left="250" src="~/images/close.png" width="20" height="20" (tap)="onCloseDrawerTap()" style.zIndex="100"></Image>
         <basket top="0" left="0"></basket>
     </AbsoluteLayout>
@@ -24,7 +24,7 @@ import { isAndroid } from "platform";
             <StackLayout top="0" left="0" height="100%" width="100%">
                 <router-outlet></router-outlet>
             </StackLayout>
-            <Image class="basket-icon" src="~/images/cart.png" width="20" height="20" (tap)="openDrawer()"></Image>
+            <Image *ngIf="!hideBasket()" class="basket-icon" src="~/images/cart.png" width="20" height="20" (tap)="openDrawer()"></Image>
         </AbsoluteLayout>
         <tab-navigation height="50" flexShrink="0"></tab-navigation>
     </FlexboxLayout>
@@ -36,7 +36,7 @@ export class AppComponent implements AfterViewInit, OnInit {
 
     constructor(
         private _changeDetectionRef: ChangeDetectorRef, 
-        private router: RouterExtensions
+        private router: RouterExtensions,
     ) {}
 
     @ViewChild(RadSideDrawerComponent) public drawerComponent: RadSideDrawerComponent;
@@ -57,6 +57,10 @@ export class AppComponent implements AfterViewInit, OnInit {
             });
         }
 
+    }
+    
+    hideBasket(): boolean {
+      return this.router.router.isActive('', true);
     }
 
     get mainContentText() {
