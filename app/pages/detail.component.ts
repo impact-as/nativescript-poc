@@ -18,7 +18,7 @@ import { FilterService } from "../services/filter.service";
             <StackLayout class="container" orientation="vertical">
                 <Label class="price" [text]="product?.PricesSanitized.ActualPrice"></Label>
                 <Label class="title" textWrap="true" [text]="product?.Name"></Label>
-                <button class="button" text="Add to basket"></button>
+                <button class="button primary" text="Add to basket"></button>
             </StackLayout>
 
 

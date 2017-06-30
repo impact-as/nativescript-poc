@@ -56,7 +56,6 @@ export class ListComponent {
                                               .finally(() => this.isLoading = false);
         });
     }
-
     public everything() {
         this.products = this.getProductsByFormat(); 
     }
