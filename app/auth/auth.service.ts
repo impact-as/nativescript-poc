@@ -8,11 +8,7 @@ import { getString, setString } from "application-settings";
 import 'rxjs/add/observable/of';
 import 'rxjs/add/operator/do';
 import 'rxjs/add/operator/delay';
-<<<<<<< HEAD
 // import 'rxjs/add/observable/frompromise';
-=======
-//import 'rxjs/add/observable/frompromise';
->>>>>>> 7149ef3a8daaa70eb8be6347beb2f1682b2a214e
 
 
 const tokenKey: string = "fireBaseToken";
