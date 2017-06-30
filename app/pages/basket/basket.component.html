@@ -1,0 +1,13 @@
+<ActionBar title="Basket" class="action-bar"></ActionBar>
+<StackLayout orientation="vertical" class="basket">
+    <Label text="Your basket" class="basket-heading" style.fontSize="20px"></Label>
+    <ScrollView height="1500px" class="basket__scrollview" style.marginTop = "20px">
+        <basket-line [products]="products"></basket-line>
+    </ScrollView>
+
+    <GridLayout columns="2*, 1*" rows="auto" class="basket-totals">
+        <label col="0" row="0" text="Samlet pris" class="totals-label"></label>
+        <label col="1" row="0" [text]="basketTotals" class="totals-price"></label>
+    </GridLayout>
+</StackLayout>
+

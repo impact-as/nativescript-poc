@@ -1,0 +1,18 @@
+.basket__line {
+    .label {
+        margin-left: 20px;
+        font-size: 15px;
+    }
+    .label.mini {
+        font-size: 11px;
+    }
+    .label.price {
+        font-size: 15px;
+        vertical-align: bottom;
+        text-align: right;
+        margin-right:40px;
+    }
+    .image {
+        margin: 5px;
+    }
+}

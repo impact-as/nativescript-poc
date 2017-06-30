@@ -9,6 +9,7 @@ import { AuthGuard } from "./auth-guard.service";
 @NgModule({
     imports: [
       NativeScriptModule,
+      NativeScriptFormsModule
     ],
     declarations: [
       LoginComponent,

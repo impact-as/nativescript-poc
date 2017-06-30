@@ -10,11 +10,15 @@ import { AuthModule } from "./auth/auth.module";
 
 import { DrawerComponent } from './drawer.component';
 
-import { HomeComponent, BasketComponent, CategoryComponent, SearchComponent, FindComponent, ListComponent, DetailComponent } from './pages';
+import { HomeComponent, BasketComponent, BasketLineComponent, CategoryComponent, SearchComponent, FindComponent, ListComponent, DetailComponent } from './pages';
 
 import { CategoryService } from "./services/category.service";
 import { FilterService } from "./services/filter.service";
 import { SearchService } from "./services/search.service";
+import { BasketService } from "./services/basket.service";
+import { ProductService } from "./services/product.service";
+
+
 
 import { TabNavigationComponent } from './tab-navigation.component';
 
@@ -35,7 +39,8 @@ import { TabNavigationComponent } from './tab-navigation.component';
     declarations: [
         AppComponent,
         HomeComponent, 
-        BasketComponent, 
+        BasketComponent,
+        BasketLineComponent,
         CategoryComponent, 
         SearchComponent,
         TabNavigationComponent,
@@ -56,7 +61,9 @@ import { TabNavigationComponent } from './tab-navigation.component';
     providers: [
         CategoryService,
         FilterService,
-        SearchService
+        SearchService,
+        BasketService,
+        ProductService
     ],      
     schemas: [
         NO_ERRORS_SCHEMA
