@@ -3,7 +3,7 @@ import { BasketLineComponent } from "./basket-line/basket-line.component";
 
 import { ProductModel } from "../products/product.model";
 
-import { BasketService } from "../../services/basket.service";
+import { ProductService } from "../../services/product.service";
 import { Observable } from 'rxjs/Observable';
 
 import { Http, Headers, Response } from "@angular/http";
@@ -19,7 +19,7 @@ export class BasketComponent implements OnInit {
     public basketTotals: string;
     private id: string = "078e6476-4c0e-4155-8af6-f88652ca15d2"; // hardcoded for testing
 
-    constructor(private http: Http, private productService: BasketService) {
+    constructor(private http: Http, private productService: ProductService) {
         this.products = this.productService.getProducts(this.id);
        
         this.products.subscribe(res => {

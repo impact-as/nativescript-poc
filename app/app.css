@@ -27,7 +27,7 @@
 }
 
 /* >> sidedrawer-getting-started-angular-css */
-button {
+.menu-button {
     font-size: 15;
     horizontal-align: center;
 }
@@ -60,3 +60,16 @@ button {
     background-color: lightgray;
 }
 /* << sidedrawer-getting-started-angular-css */
+
+
+.button {
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	background-color: green;
+	font-weight: bold;
+	padding: 25px;
+	color:white;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	border: none;
+}

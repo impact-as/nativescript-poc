@@ -1,39 +1,47 @@
 import { Injectable } from '@angular/core';
-import { Http, Headers, Response } from "@angular/http";
+import { getString, setString } from "application-settings";
+import { AuthService } from "../auth/auth.service";
+import {ProductModel} from "../pages/products/product.model";
 import { Observable as RxObservable } from 'rxjs/Observable';
 import 'rxjs/add/observable/of';
 import 'rxjs/add/operator/map';
 
-var http = require("http");
+const basketKeyPrefix = "basket";
 
 @Injectable()
 export class BasketService {
-   
-    public products: RxObservable<Array<any>>;
-    public serverHost:string = 'https://bogogide.godkend.dk/scom/jsonapi/filterservice/search?PageIndex=0&forlag=&pageId=search&PageSize=5&Search=krimi';
-  
-    constructor(private http:Http) {
-        //this.serverHost = 'https://qa.remoteiv.dk/webapi/MMfxOfu9-sGCu1Om9/2017071317-60-1140/4/0/Products/GetByProductGroupId?productGroupId=';
+    currentBasket: BasketModel;
+    constructor(private authService: AuthService) {
+      this.getBasket().subscribe();
     }
 
-    public getProducts(id:string) {
-        if(id !== undefined && id !== null) {
-        let headers = this.createRequestHeader();
-        let d = this.http.get(this.serverHost + id, { headers: headers }).map(res => res.json().Products);
-            this.products = d;
-            return d;
-            
-        } else {
-        return RxObservable.of([]);
-        }
+    public getBasket(): RxObservable<BasketModel> {
+        return this.authService.getCurrentUser().map(user => {
+          let basketKey = `${basketKeyPrefix}-${user.uid}`;
+          let basket = JSON.parse(getString(basketKey));
+          this.currentBasket = basket;
+          return basket;
+        })
+
+    }
+    
+    private updateBasket():void {
+      this.authService.getCurrentUser().subscribe(user => {
+        let basketKey = `${basketKeyPrefix}-${user.uid}`;
+        return setString(basketKey, JSON.stringify(this.currentBasket));
+      })
+        
     }
 
-    private createRequestHeader() {
-        let headers = new Headers();
-        headers.append('Content-Type','application/json');
-        headers.append('Referer','https://bogogide.godkend.dk/');
-        //headers.append('Referer','https://qa.remoteiv.dk');
-
-        return headers;
+    public addToBasket() {
     }
+    
+    public removeFromBasket(){
+      
+    }
+}
+
+export class BasketModel {
+  userId: string;
+  products: ProductModel[];
 }

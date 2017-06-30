@@ -17,6 +17,7 @@ import { FilterService } from "./services/filter.service";
 import { SearchService } from "./services/search.service";
 import { BasketService } from "./services/basket.service";
 import { StoresService } from "./services/stores.service";
+import { ProductService } from "./services/product.service";
 
 import { TabNavigationComponent } from './tab-navigation.component';
 
@@ -72,7 +73,8 @@ if(platform.isIOS) {
         FilterService,
         SearchService,
         BasketService,
-        StoresService
+        StoresService,
+        ProductService,
     ],      
     schemas: [
         NO_ERRORS_SCHEMA

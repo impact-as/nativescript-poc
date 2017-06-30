@@ -20,7 +20,7 @@ import { AuthService } from './auth.service';
         </FlexBoxLayout>
         <Button class="btn" text="Login" (tap)="loginWithPassword(email, password)"></Button>
         <Button class="btn" text="Login With Google" (tap)="loginWithGoogle()"></Button>
-        <Button class="btn" text="Sign Up" (tap)="signUp()"></Button>
+        <Button class="btn" text="Sign Up" (tap)="signUp(email, password)"></Button>
       </StackLayout>
       <StackLayout *ngIf="authService.isLoggedIn()">
         <Button class="btn" text="Logout" (tap)="logout()"></Button>
@@ -50,7 +50,7 @@ export class LoginComponent implements OnInit {
   loginWithPassword(email: string, password: string):void {
     if(!!email && !!password) {
       this.message="Logging In";
-      this.authService.loginWithPassword(email,password).subscribe(() => {
+      this.authService.loginWithPassword(email, password).subscribe(() => {
         if (this.authService.isLoggedIn()) {
           this.updateMessage();
           this.router.navigate([this.authService.redirectUrl]);
@@ -75,7 +75,16 @@ export class LoginComponent implements OnInit {
     });
   }
   
-  signUp():void {
+  signUp(email: string, password: string):void {
+
+    if(!!email && !!password) {
+      this.message="signing up";
+      this.authService.registerUser({email,password}).subscribe(() => {
+        if (this.authService.isLoggedIn()) {
+          this.updateMessage();
+        }
+      });
+    }
     
   }
 }
