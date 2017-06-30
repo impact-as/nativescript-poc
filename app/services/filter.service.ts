@@ -72,7 +72,7 @@ interface IFilterUrlParamsModel {
 	silent?: boolean;
 }
 
-interface FilterOutputViewModel {
+export interface FilterOutputViewModel {
     AvailableSortOrders: SortOrderViewModel[];
     PageIndex: number;
     PageSize: number;
@@ -90,7 +90,7 @@ interface SortOrderViewModel {
     Name: string;
 }
 
-interface FacetOutputViewModel {
+export interface FacetOutputViewModel {
     Control: string;
     CurrentMax: number;
     CurrentMin: number;

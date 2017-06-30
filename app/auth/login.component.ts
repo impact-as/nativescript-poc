@@ -6,24 +6,25 @@ import { AuthService } from './auth.service';
 @Component({
   selector: 'login',
   template: ` 
-  <StackLayout class="page">
+  <StackLayout class="container">
     <Label textalignment="center" class="h1" [text]="message"></Label>
     <ScrollView>
       <StackLayout *ngIf="!authService.isLoggedIn()">
         <FlexBoxLayout>
-          <Label class="label m-r-15" text="Email" textWrap="true"></Label>
-          <TextField flexGrow="1" hint="E-mail" [(ngModel)]="email" keyboardType="email" returnKeyType="next"></TextField>
+          <Label class="label m-r-15" width="90" text="Email" textWrap="true"></Label>
+          <TextField flexGrow="1" hint="E-mail" class="input input-border" [(ngModel)]="email" keyboardType="email" returnKeyType="next"></TextField>
         </FlexBoxLayout>
         <FlexBoxLayout>
-          <Label class="label m-r-15" text="Email" textWrap="true"></Label>
-          <TextField flexGrow="1" hint="password"[(ngModel)]="password" autocorrect="false" secure="true" autocapitalizationType="none" eturnKeyType="send" ></TextField>
+          <Label class="label m-r-15" width="90" text="Password" textWrap="true"></Label>
+          <TextField flexGrow="1" class="input input-border" hint="password"[(ngModel)]="password" autocorrect="false" secure="true" autocapitalizationType="none" eturnKeyType="send" ></TextField>
         </FlexBoxLayout>
-        <Button class="btn" text="Login" (tap)="loginWithPassword(email, password)"></Button>
-        <Button class="btn" text="Login With Google" (tap)="loginWithGoogle()"></Button>
-        <Button class="btn" text="Sign Up" (tap)="signUp(email, password)"></Button>
+        <Button class="button primary" text="Login" (tap)="loginWithPassword(email, password)"></Button>
+        <StackLayout height="80"></StackLayout>
+        <Button class="button" text="Login With Google" (tap)="loginWithGoogle()"></Button>
+        <Button class="button" text="Sign Up" (tap)="signUp(email, password)"></Button>
       </StackLayout>
       <StackLayout *ngIf="authService.isLoggedIn()">
-        <Button class="btn" text="Logout" (tap)="logout()"></Button>
+        <Button class="button" text="Logout" (tap)="logout()"></Button>
       </StackLayout>
     </ScrollView>
   </StackLayout>

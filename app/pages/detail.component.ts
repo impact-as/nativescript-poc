@@ -18,11 +18,11 @@ import { FilterService } from "../services/filter.service";
             <StackLayout class="container" orientation="vertical">
                 <Label class="price" [text]="product?.PricesSanitized.ActualPrice"></Label>
                 <Label class="title" textWrap="true" [text]="product?.Name"></Label>
-                
-                <button class="button" text="Add to basket"></button>
+                <button class="button primary" text="Add to basket"></button>
             </StackLayout>
 
 
+            <Label text="Relaterede varer" class="label mini"></Label>
             <WrapLayout width="100%">
                 <StackLayout width="100%" height="80" *ngFor="let product of relatedProducts">
                 <GridLayout width="100%" columns="60, *, 80" rows="25, 20, 20" style="padding:0px;" (tap)="onTap($event, product.Id)">
@@ -53,17 +53,12 @@ export class DetailComponent {
     }
 
     ngOnInit() {
-        this.pageRoute.params.subscribe(params => {
-            this.categoryId = params['categoryId'];
-
-            //force repaint when tapping related products
-            this.isLoading = true;
-            this.product = null;
-
-            this.filterService.getCategoryProducts(this.categoryId)
+        this.pageRoute.params
+        .subscribe(params => {
+            this.filterService.getCategoryProducts(params['categoryId'])
                 .subscribe(products => {
                     this.product = products.find(a => a.Id === params['productId']);
-                    products.forEach(item => {
+                    products.filter((i, index) => (index < 5)).forEach(item => {
                         this.relatedProducts.push(item);
                     });
                     this.isLoading = false;
