@@ -8,10 +8,12 @@ import { NativeScriptUISideDrawerModule } from "nativescript-telerik-ui/sidedraw
 
 import { DrawerComponent } from './drawer.component';
 
-import { HomeComponent, LoginComponent, BasketComponent, CategoryComponent, SearchComponent, FindComponent, ListComponent, DetailComponent } from './pages';
+import { HomeComponent, LoginComponent, BasketComponent, BasketLineComponent, CategoryComponent, SearchComponent, FindComponent, ListComponent, DetailComponent } from './pages';
 
 import { CategoryService } from "./services/category.service";
 import { FilterService } from "./services/filter.service";
+import { BasketService } from "./services/basket.service";
+
 
 import { TabNavigationComponent } from './tab-navigation.component';
 
@@ -32,7 +34,8 @@ import { TabNavigationComponent } from './tab-navigation.component';
         AppComponent,
         HomeComponent, 
         LoginComponent, 
-        BasketComponent, 
+        BasketComponent,
+        BasketLineComponent,
         CategoryComponent, 
         SearchComponent,
         TabNavigationComponent,
@@ -53,7 +56,8 @@ import { TabNavigationComponent } from './tab-navigation.component';
     ],
     providers: [
         CategoryService,
-        FilterService
+        FilterService,
+        BasketService
     ],      
     schemas: [
         NO_ERRORS_SCHEMA
