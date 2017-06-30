@@ -9,6 +9,7 @@ import { ProductModel } from "./products/product.model";
 
 import "rxjs/add/operator/map";
 import "rxjs/add/operator/do";
+// <Image class="list-to-basket" (tap)="addtobasket(product.Id)" src="~/images/cart.png" width="20" height="20"></Image>
 
 
 @Component({
@@ -27,9 +28,9 @@ import "rxjs/add/operator/do";
                     <Label row="1" col="1" [text]="product.ItemDistributor + '/' + product.ItemPublisher" class="label mini"></Label>
                     <Label row="2" col="1" [text]="product.PricesSanitized.RetailPriceLabel" class="label mini"></Label>
                     <Label row="0" col="2" [text]="product.PricesSanitized.ActualPriceAmount" class="label price"></Label>
-                    <Button row="2" col="2">
-                        <Image src="~/images/cart.png" width="20" height="20"></Image>
-                    </Button>
+
+                    <Label class="button" height="50" width="40" (tap)="addtobasket(product.Id)" text="+" col="2" row="1"></Label>
+
                 </GridLayout>
             </ng-template>
         </ListView>
@@ -58,6 +59,10 @@ export class ListComponent {
 
     public everything() {
         this.products = this.getProductsByFormat(); 
+    }
+
+    public addtobasket(id) {
+        console.log(id);
     }
 
     public hardbackOnly() {

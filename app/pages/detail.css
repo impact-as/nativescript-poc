@@ -19,15 +19,3 @@
 	color: #777;
 	text-transform: none;
 }
-.button {
-	display: block;
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
-	background-color: green;
-	font-weight: bold;
-	padding: 25px 0;
-	color:white;
-	margin-bottom: 20px;
-	margin-top: 20px;
-	border: none;
-}

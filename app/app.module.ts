@@ -16,6 +16,8 @@ import { CategoryService } from "./services/category.service";
 import { FilterService } from "./services/filter.service";
 import { SearchService } from "./services/search.service";
 import { BasketService } from "./services/basket.service";
+import { ProductService } from "./services/product.service";
+
 
 
 import { TabNavigationComponent } from './tab-navigation.component';
@@ -60,7 +62,8 @@ import { TabNavigationComponent } from './tab-navigation.component';
         CategoryService,
         FilterService,
         SearchService,
-        BasketService
+        BasketService,
+        ProductService
     ],      
     schemas: [
         NO_ERRORS_SCHEMA
