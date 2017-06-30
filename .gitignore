@@ -1,4 +1,5 @@
 app/**/*.js
+app/**/*.css
 node_modules/*
 **/.DS_Store
 platforms/*

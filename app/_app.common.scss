@@ -1,0 +1,83 @@
+// Import the theme’s variables. If you’re using a color scheme
+// other than “light”, switch the path to the alternative scheme,
+// for example '~nativescript-theme-core/scss/dark'.
+@import '~nativescript-theme-core/scss/light';
+
+// Customize any of the theme’s variables here, for instance $btn-color: red;
+
+// Import the theme’s main ruleset.
+@import '~nativescript-theme-core/scss/index';
+@import "pages/list.scss";
+@import "pages/category.scss";
+@import "pages/detail.scss";
+
+.basket-icon {
+    top:10;
+    left:320;
+}
+
+.header {
+    font-size:16;
+    font-weight:bold;
+    margin-bottom:10;
+}
+.text {
+    font-size:12;
+    margin-bottom:10;
+}
+
+.tab-icon {
+    margin:15px;
+}
+
+.active-link {
+    background-color: blue;
+}
+
+/* >> sidedrawer-getting-started-angular-css */
+.menu-button {
+    font-size: 15;
+    horizontal-align: center;
+}
+
+.drawerContentText {
+    font-size: 13;
+    padding: 10;
+}
+
+.drawerContentButton {
+    margin: 10;
+    horizontal-align: left;
+}
+
+.sideStackLayout {
+    background-color: gray;
+}
+
+.sideTitleStackLayout {
+    height: 56;
+    text-align: center;
+    vertical-align: center;
+}
+
+.sideLabel {
+    padding: 10;
+}
+
+.sideLightGrayLabel {
+    background-color: lightgray;
+}
+/* << sidedrawer-getting-started-angular-css */
+
+
+.button {
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	background-color: green;
+	font-weight: bold;
+	padding: 25px;
+	color:white;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	border: none;
+}
