@@ -12,11 +12,7 @@ const basketKeyPrefix = "basket";
 export class BasketService {
     currentBasket: BasketModel;
     constructor(private authService: AuthService) {
-      this.currentBasket = {
-        userId: "test",
-        products: []
-      }
-      this.updateBasket();
+      this.getBasket().subscribe();
     }
 
     public getBasket(): RxObservable<BasketModel> {
@@ -26,7 +22,7 @@ export class BasketService {
           this.currentBasket = basket;
           return basket;
         })
-        
+
     }
     
     private updateBasket():void {
