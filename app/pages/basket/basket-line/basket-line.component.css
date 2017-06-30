@@ -1,1 +1,1 @@
-.basket__line .label{margin-left:20px;font-size:15px}.basket__line .label.mini{font-size:11px}.basket__line .label.price{font-size:15px;vertical-align:bottom;text-align:right;margin-right:40px}.basket__line .image{margin:5px}
+.basket__line{z-index:200}.basket__line .label{margin-left:20px;font-size:15px}.basket__line .label.mini{font-size:11px}.basket__line .label.price{font-size:15px;vertical-align:bottom;text-align:right;margin-right:40px}.basket__line .image{margin:5px}

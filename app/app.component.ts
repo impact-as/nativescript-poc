@@ -14,7 +14,7 @@ import { isAndroid } from "platform";
 @Component({
     selector: 'ns-app',
     template: `
-<RadSideDrawer tkExampleTitle tkToggleNavButton height="100%" style.zIndex="200">
+<RadSideDrawer tkExampleTitle tkToggleNavButton height="100%">
     <AbsoluteLayout tkDrawerContent class="sideStackLayout" width="100%" height="100%">
         <Image top="10" left="250" src="~/images/close.png" width="20" height="20" (tap)="onCloseDrawerTap()" style.zIndex="100"></Image>
         <basket top="0" left="0"></basket>
@@ -36,8 +36,11 @@ export class AppComponent implements AfterViewInit, OnInit {
 
     constructor(
         private _changeDetectionRef: ChangeDetectorRef, 
-        private router: RouterExtensions
-    ) {}
+        private router: RouterExtensions,
+        private page: Page
+    ) {
+        page.actionBarHidden = true;
+    }
 
     @ViewChild(RadSideDrawerComponent) public drawerComponent: RadSideDrawerComponent;
     private drawer: RadSideDrawer;
