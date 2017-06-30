@@ -27,6 +27,9 @@ import "rxjs/add/operator/do";
                     <Label row="1" col="1" [text]="product.ItemDistributor + '/' + product.ItemPublisher" class="label mini"></Label>
                     <Label row="2" col="1" [text]="product.PricesSanitized.RetailPriceLabel" class="label mini"></Label>
                     <Label row="0" col="2" [text]="product.PricesSanitized.ActualPriceAmount" class="label price"></Label>
+                    <Button row="2" col="2">
+                        <Image src="~/images/cart.png" width="20" height="20"></Image>
+                    </Button>
                 </GridLayout>
             </ng-template>
         </ListView>

@@ -20,6 +20,7 @@
 	text-transform: none;
 }
 .button {
+	display: block;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 	background-color: green;
