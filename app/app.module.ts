@@ -8,6 +8,7 @@ import { NativeScriptUISideDrawerModule } from "nativescript-telerik-ui/sidedraw
 
 import { AuthModule } from "./auth/auth.module";
 
+import { NativeScriptUIListViewModule } from "nativescript-telerik-ui-pro/listview/angular";
 import { DrawerComponent } from './drawer.component';
 
 import { HomeComponent, BasketComponent, BasketLineComponent, CategoryComponent, SearchComponent, FindComponent, ListComponent, DetailComponent, StoreComponent } from './pages';
@@ -42,7 +43,8 @@ if(platform.isIOS) {
         NativeScriptHttpModule,
         AppRoutingModule,
         NativeScriptUISideDrawerModule,
-        AuthModule
+        AuthModule,
+        NativeScriptUIListViewModule
     ],
     declarations: [
         AppComponent,
