@@ -11,9 +11,13 @@
 @import "pages/category.scss";
 @import "pages/detail.scss";
 
-.basket-icon {
-    top:10;
-    left:320;
+.basket-icon {    
+    margin-left:90%;
+    margin-top:20px;
+
+    &.search {
+        margin-right:20%;
+    }
 }
 
 .header {

@@ -20,11 +20,13 @@ import { isAndroid } from "platform";
                 <basket top="0" left="0"></basket>
             </AbsoluteLayout>
             <FlexboxLayout flexDirection="column" tkMainContent>
-                <AbsoluteLayout flexGrow="1" flexShrink="1" height="100">
+                <AbsoluteLayout flexGrow="1" flexShrink="1" height="100">                    
                     <StackLayout top="0" left="0" height="100%" width="100%">
                         <router-outlet></router-outlet>
                     </StackLayout>
-                    <Image *ngIf="!hideBasket()" class="basket-icon" src="~/images/cart.png" width="20" height="20" (tap)="openDrawer()"></Image>
+                    <StackLayout top="0" left="0" width="100%">
+                        <Image *ngIf="!hideBasket()" [class]="'basket-icon ' + pageClass" src="~/images/cart.png" width="25" height="25" (tap)="openDrawer()"></Image>
+                    </StackLayout>                    
                 </AbsoluteLayout>
                 <tab-navigation height="50" flexShrink="0"></tab-navigation>
             </FlexboxLayout>
@@ -32,7 +34,7 @@ import { isAndroid } from "platform";
     `
 })
 export class AppComponent implements AfterViewInit, OnInit {
-    private _mainContentText: string;
+    private _mainContentText: string;        
 
     constructor(
         private _changeDetectionRef: ChangeDetectorRef, 
@@ -64,6 +66,10 @@ export class AppComponent implements AfterViewInit, OnInit {
     
     hideBasket(): boolean {
       return this.router.router.isActive('', true);
+    }
+
+    get pageClass(){
+        return this.router.router.url.replace(/\//g,'');
     }
 
     get mainContentText() {

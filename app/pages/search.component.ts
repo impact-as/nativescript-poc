@@ -19,7 +19,7 @@ import 'rxjs/add/operator/switchMap';
   selector: "search",
   template: `
     <StackLayout>
-        <SearchBar hint="Søg på produkt" (textChange)="searchFieldChange($event)"></SearchBar>
+        <SearchBar hint="Søg på produkt" (textChange)="searchFieldChange($event)" style="padding-right:500px"></SearchBar>
                 
         <ListView [items]="searchResult" class="list-group">
             <ng-template let-product="item" let-i="index" let-odd="odd" let-even="even">
