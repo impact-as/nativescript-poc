@@ -28,9 +28,9 @@ export class WelcomeComponent {
   }
   
   ngOnInit(){
-    //if (this.authService.isLoggedIn()) {
+    if (this.authService.isLoggedIn()) {
       this.router.navigate(['/home']);
-    //};
+    };
     
   }  
  
