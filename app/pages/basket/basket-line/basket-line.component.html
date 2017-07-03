@@ -1,4 +1,4 @@
-<ListView [items]="products | async" class="basket__line">
+<ListView [items]="products" class="basket__line">
     <ng-template let-product="item" let-i="index" let-odd="odd" let-even="even">
         <GridLayout width="100%" columns="60, *, 80" rows="25,20,20" style="padding:0px;">
             <Image width="80" rowSpan="3" row="0" col="0" [src]="'https://bogogide.godkend.dk' + product.PrimaryImageUrl + '&width=100&height=100'" class="image" width="50" height="50"></Image>

@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from "@angular/core";
 import { Observable } from 'rxjs/Observable';
+import { ProductModel } from "../../products/product.model";
+
 
 @Component({
     selector: "basket-line",
@@ -9,7 +11,8 @@ import { Observable } from 'rxjs/Observable';
 })
 export class BasketLineComponent implements OnInit {
     @Input()
-    public products: Observable<Array<any>> = null;   
+    public products: ProductModel[];
+    //public products: Observable<Array<any>> = null;   
     constructor () {
         
     }

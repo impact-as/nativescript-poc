@@ -10,19 +10,18 @@ const basketKeyPrefix = "basket";
 
 @Injectable()
 export class BasketService {
-    currentBasket: BasketModel;
+    currentBasket: ProductModel[] = [];
     constructor(private authService: AuthService) {
       this.getBasket().subscribe();
     }
 
-    public getBasket(): RxObservable<BasketModel> {
+    public getBasket(): RxObservable<ProductModel> {
         return this.authService.getCurrentUser().map(user => {
           let basketKey = `${basketKeyPrefix}-${user.uid}`;
           let basket = JSON.parse(getString(basketKey));
           this.currentBasket = basket;
           return basket;
-        })
-
+        });
     }
     
     private updateBasket():void {
@@ -33,7 +32,9 @@ export class BasketService {
         
     }
 
-    public addToBasket() {
+    public addToBasket(product:ProductModel) {
+        this.currentBasket.push(product);
+        this.updateBasket();
     }
     
     public removeFromBasket(){

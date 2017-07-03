@@ -4,6 +4,7 @@ import {ActivatedRoute} from "@angular/router";
 import "rxjs/add/operator/switchMap";
 import { GestureEventData } from "tns-core-modules/ui/gestures/gestures";
 import { FilterService } from "../services/filter.service";
+import { BasketService } from "../services/basket.service"
 
 @Component({
   selector: "detail",
@@ -19,7 +20,7 @@ import { FilterService } from "../services/filter.service";
                 <Label class="price" [text]="product?.PricesSanitized.ActualPrice"></Label>
                 <Label class="title" textWrap="true" [text]="product?.Name"></Label>
                 
-                <button class="button" text="Add to basket"></button>
+                <button class="button" text="Add to basket" (tap)="addToBasket(product)"></button>
             </StackLayout>
 
 
@@ -48,7 +49,8 @@ export class DetailComponent {
     constructor(
         private pageRoute: ActivatedRoute, 
         private filterService: FilterService, 
-        private routerExtensions: RouterExtensions
+        private routerExtensions: RouterExtensions,
+        private basketService: BasketService
     ) {
     }
 
@@ -79,5 +81,10 @@ export class DetailComponent {
                 curve: "linear"
             }
         });        
+    }
+
+    public addToBasket(product:any){        
+        this.basketService.addToBasket(product);
+
     }
 }
