@@ -4,13 +4,14 @@ import { NativeScriptHttpModule } from "nativescript-angular/http";
 import { AppRoutingModule } from "./app.routing";
 import { AppComponent } from "./app.component";
 
-import { NativeScriptUISideDrawerModule } from "nativescript-telerik-ui/sidedrawer/angular";
+import { NativeScriptUISideDrawerModule } from "nativescript-telerik-ui-pro/sidedrawer/angular";
 
 import { AuthModule } from "./auth/auth.module";
 
+import { NativeScriptUIListViewModule } from "nativescript-telerik-ui-pro/listview/angular";
 import { DrawerComponent } from './drawer.component';
 
-import { HomeComponent, BasketComponent, BasketLineComponent, CategoryComponent, SearchComponent, FindComponent, ListComponent, DetailComponent, StoreComponent } from './pages';
+import { HomeComponent, BasketComponent, BasketLineComponent, CategoryComponent, SearchComponent, FindComponent, ListComponent, DetailComponent, StoreComponent, WelcomeComponent } from './pages';
 
 import { CategoryService } from "./services/category.service";
 import { FilterService } from "./services/filter.service";
@@ -42,7 +43,8 @@ if(platform.isIOS) {
         NativeScriptHttpModule,
         AppRoutingModule,
         NativeScriptUISideDrawerModule,
-        AuthModule
+        AuthModule,
+        NativeScriptUIListViewModule
     ],
     declarations: [
         AppComponent,
@@ -56,7 +58,8 @@ if(platform.isIOS) {
         FindComponent,
         ListComponent,
         DetailComponent,
-        StoreComponent
+        StoreComponent,
+        WelcomeComponent
     ],
     entryComponents:[
         HomeComponent, 

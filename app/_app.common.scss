@@ -73,11 +73,25 @@
 .button {
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
-	background-color: green;
+	background-color: #CCC;
+	color:black;
 	font-weight: bold;
 	padding: 25px;
-	color:white;
 	margin-bottom: 20px;
 	margin-top: 20px;
 	border: none;
+
+    &.primary {
+        background-color: green;
+        color:white;
+    }
+
+}
+
+.input {
+    padding:16px;
+    background-color: #e2e2e2;
+    border:none;
+    margin: 10px 0;
+    border-radius: 6px;
 }
