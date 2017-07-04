@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { AuthService } from './auth.service';
+import { BasketService } from '../services/basket.service';
 
 @Component({
   selector: 'login',
@@ -38,7 +39,8 @@ export class LoginComponent implements OnInit {
 
   
   constructor(private authService: AuthService, 
-              public router: Router){ }
+              public router: Router,
+              private basketService: BasketService){ }
             
   ngOnInit() {
     this.updateMessage();
@@ -54,6 +56,7 @@ export class LoginComponent implements OnInit {
       this.authService.loginWithPassword(email, password).subscribe(() => {
         if (this.authService.isLoggedIn()) {
           this.updateMessage();
+          this.basketService.getBasket().subscribe();
           this.router.navigate([this.authService.redirectUrl]);
         }
       });
@@ -64,6 +67,7 @@ export class LoginComponent implements OnInit {
     this.authService.loginWithGoogle().subscribe(() => {
       if (this.authService.isLoggedIn()) {
         this.updateMessage();
+        this.basketService.getBasket().subscribe();
         this.router.navigate([this.authService.redirectUrl]);
       }
     });

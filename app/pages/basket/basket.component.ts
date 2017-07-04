@@ -17,10 +17,7 @@ import { Http, Headers, Response } from "@angular/http";
     styleUrls: ["./basket.component.css"]    
 })
 export class BasketComponent implements OnInit {
-    public products: Observable<Array<ProductModel>> = null;
-    public basketLines: ProductModel[] = [];
-
-    public lineItems: Observable<ProductModel>;
+    public currentBasket: Observable<ProductModel[]>;
 
     public basketTotals: string;
     public basketEmpty: boolean = false;
@@ -34,11 +31,17 @@ export class BasketComponent implements OnInit {
         //         this.basketTotals = basketTotals.toFixed(2);            
         //     }
         // );        
-        let basketPromise = this.basketService.getBasket();
-        basketPromise.subscribe(res => {            
-            this.basketLines = this.basketService.currentBasket;
-            let basketTotals = this.basketLines.map(e => e.PricesSanitized.ActualPriceAmount).reduce((p,c) => p+c);
+        
+        // let basketPromise = this.basketService.getBasket().subscribe();
+        this.currentBasket = this.basketService.currentBasket;
+        
+        this.currentBasket.subscribe(res => {
+          if (!!res.length) {
+            let basketTotals = res.map(e => e.PricesSanitized.ActualPriceAmount).reduce((p,c) => p+c);
             this.basketTotals = basketTotals.toFixed(2);
+          } else {
+            this.basketTotals = "0";
+          }
         });         
     }
 
