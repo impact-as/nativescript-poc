@@ -14,13 +14,13 @@ import { isAndroid } from "platform";
 @Component({
     selector: 'ns-app',
     template: `
-        <RadSideDrawer tkExampleTitle tkToggleNavButton height="100%" style.zIndex="200">
+        <RadSideDrawer tkExampleTitle tkToggleNavButton height="100%">
             <AbsoluteLayout *ngIf="!hideBasket()" tkDrawerContent class="sideStackLayout" width="100%" height="100%">
-                <Image top="10" left="250" src="~/images/close.png" width="20" height="20" (tap)="onCloseDrawerTap()" style.zIndex="100"></Image>
+                <Image top="10" left="250" src="~/images/close.png" width="20" height="20" (tap)="onCloseDrawerTap()"></Image>
                 <basket top="0" left="0"></basket>
             </AbsoluteLayout>
             <FlexboxLayout flexDirection="column" tkMainContent>
-                <AbsoluteLayout flexGrow="1" flexShrink="1" height="100">                    
+                <AbsoluteLayout flexGrow="1" flexShrink="1" height="100">
                     <StackLayout top="0" left="0" height="100%" width="100%">
                         <router-outlet></router-outlet>
                     </StackLayout>
@@ -81,7 +81,7 @@ export class AppComponent implements AfterViewInit, OnInit {
     }
 
     public openDrawer() {
-        this.drawer.showDrawer();
+        this.drawer.showDrawer();        
     }
 
     public onCloseDrawerTap() {

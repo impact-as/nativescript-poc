@@ -35,11 +35,11 @@ export class BasketComponent implements OnInit {
         //     }
         // );        
         let basketPromise = this.basketService.getBasket();
-        basketPromise.subscribe(res => {
-            console.log(res);
-            this.basketLines = this.basketService.currentBasket;    
-        });   
-        
+        basketPromise.subscribe(res => {            
+            this.basketLines = this.basketService.currentBasket;
+            let basketTotals = this.basketLines.map(e => e.PricesSanitized.ActualPriceAmount).reduce((p,c) => p+c);
+            this.basketTotals = basketTotals.toFixed(2);
+        });         
     }
 
     ngOnInit(): void {

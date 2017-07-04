@@ -1,4 +1,6 @@
+$textColor: #000;
 .basket {
+    color: $textColor;
     z-index: 200;
     width:100%;
     padding-top:20px;
@@ -7,11 +9,12 @@
     }
     .basket-heading {
         font-size:40px;
-        margin-left:40px;
+        margin-left:40px;        
     }
 }
 
 .basket-totals {
+    color: $textColor;
     margin-top:50px;
     width:100%;
     font-size:20px;    

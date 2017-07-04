@@ -1,14 +1,12 @@
-<DockLayout width="100%" height="100%" >
-<StackLayout dock="top" orientation="vertical" class="basket" height="90%">
-    <Label text="Your basket" class="basket-heading" style.fontSize="20px"></Label>
-    <ScrollView height="100%" class="basket__scrollview" style.marginTop = "20px">
-        <basket-line [products]="basketLines"></basket-line>
-    </ScrollView>    
-</StackLayout>
-<GridLayout dock="bottom" columns="2*, 1*" rows="auto" class="basket-totals">
-    <label col="0" row="0" text="Samlet pris" class="totals-label"></label>
-    <label col="1" row="0" [text]="basketTotals" class="totals-price"></label>
-</GridLayout>
+<DockLayout width="100%" height="100%">
+    <StackLayout dock="top" orientation="vertical" class="basket" height="90%">
+        <Label text="Your basket" class="basket-heading" style.fontSize="20px"></Label>
+        <ScrollView height="100%" class="basket__scrollview" style.marginTop = "20px">
+            <basket-line [products]="basketLines"></basket-line>
+        </ScrollView>    
+    </StackLayout>
+    <GridLayout dock="bottom" columns="2*, 1*" rows="auto" class="basket-totals">
+        <label col="0" row="0" text="Total" class="totals-label"></label>
+        <label col="1" row="0" [text]="basketTotals" class="totals-price"></label>
+    </GridLayout>
 </DockLayout>
-
-
