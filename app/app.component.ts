@@ -14,8 +14,8 @@ import { isAndroid } from "platform";
 @Component({
     selector: 'ns-app',
     template: `
-        <RadSideDrawer tkExampleTitle tkToggleNavButton height="100%">
-            <AbsoluteLayout *ngIf="!hideBasket()" tkDrawerContent class="sideStackLayout" width="100%" height="100%">
+        <RadSideDrawer tkExampleTitle tkToggleNavButton height="100%" [gesturesEnabled]="!hideBasket()">
+            <AbsoluteLayout tkDrawerContent class="sideStackLayout" width="100%" height="100%">
                 <Image top="10" left="250" src="~/images/close.png" width="20" height="20" (tap)="onCloseDrawerTap()"></Image>
                 <basket top="0" left="0"></basket>
             </AbsoluteLayout>
@@ -65,7 +65,7 @@ export class AppComponent implements AfterViewInit, OnInit {
     }
     
     hideBasket(): boolean {
-      return this.router.router.isActive('', true);
+      return this.router.router.isActive('', true) || this.router.router.isActive('login', true);
     }
 
     get pageClass(){
