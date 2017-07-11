@@ -24,7 +24,7 @@ import { isAndroid } from "platform";
                     <StackLayout top="0" left="0" height="100%" width="100%">
                         <router-outlet></router-outlet>
                     </StackLayout>
-                    <StackLayout top="0" left="0" width="100%">
+                    <StackLayout top="0" left="290" width="30">
                         <Image *ngIf="!hideBasket()" [class]="'basket-icon ' + pageClass" src="~/images/cart.png" width="25" height="25" (tap)="openDrawer()"></Image>
                     </StackLayout>                    
                 </AbsoluteLayout>
