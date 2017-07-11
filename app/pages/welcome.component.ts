@@ -6,7 +6,7 @@ import { AuthService } from "../auth/auth.service";
 @Component({
     selector: 'page-welcome',
     template:`
-      <StackLayout>
+      <StackLayout class="container">
         <StackLayout height="30%"></StackLayout>
         <Label text="Login for at se kurv eller fortsæt uden at være logget ind" textWrap="true"></Label>
         <ScrollView> 

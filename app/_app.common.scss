@@ -30,12 +30,18 @@
     margin-bottom:10;
 }
 
+.tab-menu {
+    height:80px;
+}
+
 .tab-icon {
-    margin:15px;
+    width:50px;
+    display:block;
+    padding-top: 10px;
 }
 
 .active-link {
-    background-color: blue;
+    background-color: #555;
 }
 
 /* >> sidedrawer-getting-started-angular-css */
