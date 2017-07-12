@@ -10,6 +10,7 @@ import { ProductModel } from "./products/product.model";
 
 import "rxjs/add/operator/map";
 import "rxjs/add/operator/do";
+import { BasketService } from "../services/basket.service";
 // <Image class="list-to-basket" (tap)="addtobasket(product.Id)" src="~/images/cart.png" width="20" height="20"></Image>
 
         
@@ -38,7 +39,7 @@ import "rxjs/add/operator/do";
                     <Label row="2" col="1" [text]="product.PricesSanitized.RetailPriceLabel" class="label mini"></Label>
                     <Label row="0" col="2" [text]="product.PricesSanitized.ActualPriceAmount" class="label price"></Label>
 
-                    <Label class="button" height="50" width="40" (tap)="addtobasket(product.Id)" text="+" col="2" row="1"></Label>
+                    <Label class="button" height="50" width="40" (tap)="addToBasket($event, product)" text="+" col="2" row="1"></Label>
 
                 </GridLayout>
             </ng-template>
@@ -59,6 +60,7 @@ export class ListComponent {
         private http: Http, 
         private routerExtensions: RouterExtensions, 
         private pageRoute: ActivatedRoute, 
+        private basketService:BasketService,
         private filterService: FilterService) { 
         this.isLoading = true;
 
@@ -80,6 +82,12 @@ export class ListComponent {
                 });
             });
         });
+    }
+
+    public addToBasket(evn, product:any){        
+        this.basketService.addToBasket(product);
+        var button = evn.object;
+        button.text = "-";
     }
  
     public getProductsByFormat(format: string = "") {
