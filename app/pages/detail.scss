@@ -1,21 +1,22 @@
 .container {
-	margin: 40px;
+    margin: 40px;
 }
+
 .container.border {
-	border-width: 1px;
-	border-color:grey;
+    border-width: 1px;
+    border-color: #777;
 }
 
 .image {
-	margin: 20px;
+    margin: 20px;
 }
 
 .price {
-	font-size: 30px;
+    font-size: 30px;
 }
 
 .title {
-	font-size: 16px;
-	color: #777;
-	text-transform: none;
+    font-size: 16px;
+    color: #777;
+    text-transform: none;
 }
