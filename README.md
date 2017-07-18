@@ -44,14 +44,14 @@ Main reason for using HockeyApp, is that we can manage both Android and iOS apps
 1. open file in __Xcode__: `"project_root/platforms/ios/nativescriptpoc.xcworkspace"`  
 Se images for highlighted, fields. Be sure to give the app a name.
 And think about what version you are going to deploy.  
-![Image](start-up.png)
+![Image](readme-assets/start-up.png)
 
 2. Build an .ipa file, and upload it to hockeyapp. Product -> Archive
 _[optional] Open HockeyApp for Mac, to automatically get notification when it's ready for upload._  
-![Image](archive.png)
+![Image](readme-assets/archive.png)
 
 3. Open Hockeyapp and set desired settings 
-![Image](upload.png)
+![Image](readme-assets/upload.png)
 
 ## Add user device
 >__Info:__ We have created a Distribution Group in HockeyApp, for bulk assign users to Apps.
@@ -86,6 +86,6 @@ _[optional] Open HockeyApp for Mac, to automatically get notification when it's 
 10. Double click downloaded file
 
 11. In Xcode choose setup from image
-![Image](xcode-profiles.png)
+![Image](readme-assets/xcode-profiles.png)
 
 12. New user is added and will be able to download app after next build.
