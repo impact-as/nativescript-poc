@@ -31,7 +31,7 @@ Main reason for using HockeyApp, is that we can manage both Android and iOS apps
 
 4. run: `tns doctor` check if components is up to date and check for issues
 
-5. run: `tns device ios --available-devices` chech to if any emulator is installed
+5. run: `tns device ios --available-devices` check to if any emulator is installed
 
 6. run: `tns run ios` check if your app can run on emulator
 
